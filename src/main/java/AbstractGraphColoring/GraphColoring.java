@@ -28,6 +28,23 @@ public abstract class GraphColoring {
         return resultColor[v];
     }
 
+    // remove an element from Array
+    public int[] remove(int[] arr, int v) {
+        int ret[] = new int[arr.length - 1];
+        if (arr.length > 1) {
+            int cout = 0;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == v) {
+                } else {
+                    ret[cout] = arr[i];
+                    cout++;
+                }
+            }
+            return ret;
+        } else
+            return ret;
+    }
+
     public boolean colorIsUsed(int d, int a[], int lenght) {
         if (d == -1)
             return true;

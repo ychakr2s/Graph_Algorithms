@@ -11,6 +11,7 @@ public class Greedy_Algorithm extends GraphColoring {
     private int V;
     private int resultColors[];
     private boolean available[];
+
     /*
      * Constructor
      */
@@ -29,6 +30,7 @@ public class Greedy_Algorithm extends GraphColoring {
         Arrays.fill(available, true);
     }
 
+    @SuppressWarnings("Duplicates")
     @Override
     public void executeAlgorithm() {
         // Assign the first color to first vertex
@@ -39,11 +41,10 @@ public class Greedy_Algorithm extends GraphColoring {
             /*
              * Process all adjacent vertices and flag their colors as unavailable.
              */
-            Iterator<Integer> it = graph.getEdges(u).iterator();
-            while (it.hasNext()) {
-                int i = it.next();
-                if (getColor(i, resultColors) != -1)
-                    available[getColor(i, resultColors)] = false;
+            for (int ver : graph.getEdges(u)) {
+                if (getColor(ver, resultColors) != -1) {
+                    available[getColor(ver, resultColors)] = false;
+                }
             }
             // Find the first available color
             int cr;

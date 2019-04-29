@@ -12,12 +12,10 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     // No. of vertices
     private int V;
     private int[] vertices;
-    private int resultColors[];
-    // This variable represent whether a color available for this Vertex or not
-    private boolean[] available;
+    private int[] resultColors;
 
     /*
-    * Constructor
+     * Constructor
      */
     public welsh_Powell_Algorithm(Graph g) {
         this.graph = g;
@@ -25,49 +23,30 @@ public class welsh_Powell_Algorithm extends GraphColoring {
         this.vertices = graph.getVertices();
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
-        this.available = new boolean[V];
-        Arrays.fill(available, true);
     }
 
     /*
      * This Method sorted the the Vertices descending according to the Vertex degree
      */
-    public int[] sortDesc(int[] a) {
+    private int[] sortDesc(int[] a) {
         int[] ret = new int[V];
         for (int i = 0; i < V; i++) {
             ret[i] = graph.vertexHighstAdjDegree(a);
-            int b[] = remove(a, ret[i]);
-            a = b;
+            a = remove(a, ret[i]);
         }
         return ret;
-    }
-
-    // remove an element from Array
-    public int[] remove(int arr[], int v) {
-        int ret[] = new int[arr.length - 1];
-        if (arr.length > 1) {
-            int cout = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] == v) {
-                } else {
-                    ret[cout] = arr[i];
-                    cout++;
-                }
-            }
-            return ret;
-        } else
-            return ret;
-
     }
 
     /*
      *  this method checks whether the passed vertex is adjacency to already colored vertices.
      */
-    public boolean AdjToAlreadyColored(ArrayList<Integer> y, int ver) {
-        for (int i = 0; i < y.size(); i++) {
+    private boolean AdjToAlreadyColored(ArrayList<Integer> y, int ver) {
+        int i = 0;
+        while (i < y.size()) {
             if (graph.isEdges(y.get(i), ver)) {
                 return true;
             }
+            i++;
         }
         return false;
     }
@@ -75,8 +54,8 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     /*
      * this method removes the ALREADY COLORED VERTICES from the sorted array
      */
-    public int[] removeColored(ArrayList<Integer> alreadyColor, int[] sortedArray) {
-        int b[] = sortedArray;
+    private int[] removeColored(ArrayList<Integer> alreadyColor, int[] sortedArray) {
+        int[] b = sortedArray;
         for (int i = 0; i < alreadyColor.size(); i++) {
             b = remove(b, alreadyColor.get(i));
         }
@@ -87,7 +66,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     public void executeAlgorithm() {
 
         // List the vertices in order of descending valence i.e.valence degree(v(i)) >= degree(v(i+1)) .
-        int verts[] = sortDesc(vertices);
+        int[] verts = sortDesc(vertices);
         // Colour the first vertex in the list.
         int color = 0;
         ArrayList<Integer> alreadyColored = new ArrayList<Integer>();
