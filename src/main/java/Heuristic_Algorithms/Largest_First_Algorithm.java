@@ -4,7 +4,6 @@ import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class Largest_First_Algorithm extends GraphColoring {
     /*
@@ -12,7 +11,7 @@ public class Largest_First_Algorithm extends GraphColoring {
      */
     private Graph graph;
     private int V;
-    private int resultColors[];
+    private int[] resultColors;
     // This variable represent whether a color available for this Vertex or not
     private boolean[] available;
 
@@ -30,7 +29,7 @@ public class Largest_First_Algorithm extends GraphColoring {
         Arrays.fill(available, true);
     }
 
-    @SuppressWarnings("Duplicates")
+    // @SuppressWarnings("Duplicates")
     @Override
     public void executeAlgorithm() {
         int count = 1;
@@ -38,23 +37,11 @@ public class Largest_First_Algorithm extends GraphColoring {
         int vertex0 = graph.vertexHighstAdjDegree(graph.getVertices());
         setColor(vertex0, 0, resultColors);
         // remove the colored Vertex from the Vertices Array
-        int descend[] = remove(graph.getVertices(), vertex0);
+        int[] descend = remove(graph.getVertices(), vertex0);
 
         while (count < V) {
             int vertex = graph.vertexHighstAdjDegree(descend);
-            Iterator<Integer> it = graph.getEdges(vertex).iterator();
-            while (it.hasNext()) {
-                int i = it.next();
-                if (getColor(i, resultColors) != -1) {
-                    available[getColor(i, resultColors)] = false;
-                }
-            }
-            // Find the first available color
-            int cr;
-            for (cr = 0; cr < V; cr++) {
-                if (available[cr])
-                    break;
-            }
+            int cr = assignRightColor(graph, vertex, resultColors, available);
             // Assign the found color to the Vertex
             setColor(vertex, cr, resultColors);
             // Reset the values back to true for the next iteration
@@ -62,14 +49,16 @@ public class Largest_First_Algorithm extends GraphColoring {
             count++;
             descend = remove(descend, vertex);
         }
-
     }
 
+    @Override
     public void description() {
-
+        System.out.println("this is the implementation of the Largest First Algorithm ");
     }
 
+    @Override
     public void printSolution() {
-
+        description();
+        printTest(resultColors, graph);
     }
 }

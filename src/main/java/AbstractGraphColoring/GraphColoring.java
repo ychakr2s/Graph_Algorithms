@@ -20,7 +20,7 @@ public abstract class GraphColoring {
      */
     public abstract void printSolution();
 
-    public void setColor(int v, int color, int resultColors[]) {
+    public void setColor(int v, int color, int[] resultColors) {
         resultColors[v] = color;
     }
 
@@ -43,6 +43,25 @@ public abstract class GraphColoring {
             return ret;
         } else
             return ret;
+    }
+
+    @SuppressWarnings("Duplicates")
+    public int assignRightColor(Graph graph, int cv, int[] resultColors, boolean[] available) {
+        Iterator<Integer> it = graph.getEdges(cv).iterator();
+        while (it.hasNext()) {
+            int i = it.next();
+            if (getColor(i, resultColors) != -1) {
+                available[getColor(i, resultColors)] = false;
+            }
+        }
+
+        // Find the first available color
+        int cr;
+        for (cr = 0; cr < graph.getNumVertices(); cr++) {
+            if (available[cr])
+                break;
+        }
+        return cr;
     }
 
     public boolean colorIsUsed(int d, int a[], int lenght) {
