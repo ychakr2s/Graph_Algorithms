@@ -11,7 +11,9 @@ public class Greedy_Algorithm extends GraphColoring {
     private int V;
     private int resultColors[];
     private boolean available[];
-
+    /*
+     * Constructor
+     */
     public Greedy_Algorithm(Graph graph) {
         this.graph = graph;
         this.V = graph.getNumVertices();
@@ -25,36 +27,30 @@ public class Greedy_Algorithm extends GraphColoring {
          */
         this.available = new boolean[V];
         Arrays.fill(available, true);
-
     }
 
-	@Override
-    // Assigns colors (starting from 0) to all vertices and
-    // prints the assignment of colors
-
+    @Override
     public void executeAlgorithm() {
-
         // Assign the first color to first vertex
         setColor(0, 0, resultColors);
 
         // Assign colors to remaining V-1 vertices
         for (int u = 1; u < V; u++) {
-            // Process all adjacent vertices and flag their colors
-            // as unavailable
+            /*
+             * Process all adjacent vertices and flag their colors as unavailable.
+             */
             Iterator<Integer> it = graph.getEdges(u).iterator();
             while (it.hasNext()) {
                 int i = it.next();
                 if (getColor(i, resultColors) != -1)
                     available[getColor(i, resultColors)] = false;
             }
-
             // Find the first available color
             int cr;
             for (cr = 0; cr < V; cr++) {
                 if (available[cr])
                     break;
             }
-
             setColor(u, cr, resultColors); // Assign the found color
 
             // Reset the values back to true for the next iteration
@@ -62,12 +58,15 @@ public class Greedy_Algorithm extends GraphColoring {
         }
     }
 
+    @Override
     public void description() {
-
+        System.out.println("This is the Implementation of the Greedy Algorithm");
     }
 
-    public void printTest() {
-
+    @Override
+    public void printSolution() {
+        description();
+        printTest(resultColors, graph);
     }
 
 }

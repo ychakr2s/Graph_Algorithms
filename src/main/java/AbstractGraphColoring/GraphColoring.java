@@ -18,7 +18,7 @@ public abstract class GraphColoring {
     /*
      * This method prints the test of the Algorithms
      */
-    public abstract void printTest();
+    public abstract void printSolution();
 
     public void setColor(int v, int color, int resultColors[]) {
         resultColors[v] = color;
@@ -77,10 +77,10 @@ public abstract class GraphColoring {
     }
 
     public void printTest(int[] resultColors, Graph graph) {
-        if (test(resultColors, graph)) {
-            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++ \n The Algorithm runs correctly ");
-        } else
-            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++ \n The Algorithm runs wrongly ");
-        System.out.println(toString());
+        if (test(resultColors, graph))
+            System.out.println("+++++++++++++++++++ the Algorithms runs correctly +++++++++++++++++++++");
+        else
+            System.out.println("+++++++++++++++++++ the Algorithms runs wrongly +++++++++++++++++++++++");
+        System.out.println(toString(resultColors));
     }
 }

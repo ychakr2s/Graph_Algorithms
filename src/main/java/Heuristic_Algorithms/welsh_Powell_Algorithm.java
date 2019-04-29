@@ -16,6 +16,9 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     // This variable represent whether a color available for this Vertex or not
     private boolean[] available;
 
+    /*
+    * Constructor
+     */
     public welsh_Powell_Algorithm(Graph g) {
         this.graph = g;
         this.V = graph.getNumVertices();
@@ -120,12 +123,8 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void printTest() {
+    public void printSolution() {
         description();
-        System.out.println(toString(resultColors));
-        if (test(resultColors, graph))
-            System.out.println("+++++++++++++++++++ the Algorithms runs correctly +++++++++++++++++++++");
-        else
-            System.out.println("+++++++++++++++++++ the Algorithms runs wrongly +++++++++++++++++++++++");
+        printTest(resultColors, graph);
     }
 }
