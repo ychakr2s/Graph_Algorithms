@@ -4,13 +4,12 @@ import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class Greedy_Algorithm extends GraphColoring {
     private Graph graph;
     private int V;
-    private int resultColors[];
-    private boolean available[];
+    private int[] resultColors;
+    private boolean[] available;
 
     /*
      * Constructor
@@ -37,22 +36,12 @@ public class Greedy_Algorithm extends GraphColoring {
         setColor(0, 0, resultColors);
 
         // Assign colors to remaining V-1 vertices
-        for (int u = 1; u < V; u++) {
+        for (int vertex = 1; vertex < V; vertex++) {
             /*
              * Process all adjacent vertices and flag their colors as unavailable.
              */
-            for (int ver : graph.getEdges(u)) {
-                if (getColor(ver, resultColors) != -1) {
-                    available[getColor(ver, resultColors)] = false;
-                }
-            }
-            // Find the first available color
-            int cr;
-            for (cr = 0; cr < V; cr++) {
-                if (available[cr])
-                    break;
-            }
-            setColor(u, cr, resultColors); // Assign the found color
+            int cr = findRightColor(graph, vertex, resultColors, available);
+            setColor(vertex, cr, resultColors); // Assign the found color
 
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);

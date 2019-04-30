@@ -31,7 +31,9 @@ public class dSatur_Algorithm extends GraphColoring {
         Arrays.fill(available, true);
     }
 
-    // This method calculate the Saturation degree of the wanted Vertex
+    /*
+     *This method calculate for the uncolored vertex the degree of the adjacency vertices which are colored with different colors.
+     */
     private void calculateDsatur(int v) {
         graph.getEdges(v).stream().forEach((i) -> {
             if (!alreadyColored[i]) {
@@ -64,34 +66,35 @@ public class dSatur_Algorithm extends GraphColoring {
         alreadyColored[vertex] = true;
     }
 
-    /*
-     * This method execute an degree Saturation
-     */
     @Override
     public void executeAlgorithm() {
         int count = 0;
-        // Assign the first color to first vertex
+        /*
+         * The uncolored vertex that has the largest degree in the degree set 𝐷𝑒𝑔(𝑣𝑖) is selected for coloring.
+         * The selected vertex is colored with first color.
+         */
         int v0 = graph.vertexHighstAdjDegree(graph.getVertices());
         colorVertex(v0, 0);
+        // calculate the number adjacent vertices which are colored with different colors for every uncolored vertex.
         calculateDsatur(v0);
 
-        /*
-         * Assign colors to remaining V-1 vertices If there is more than one take the
-         * highest degree
-         */
-
         while (count < V - 1) {
+            /*
+             * the uncolored vertex whose number of adjacent vertices colored with different colors is the maximum is selected for coloring.
+             * If more than one vertex provide this condition, the vertex which has the largest degree among them is selected.
+             */
             int[] v = highestDsatur(this.dSatur);
-            int cv = graph.vertexHighstAdjDegree(v);
-
-            int cr = assignRightColor(graph, cv, resultColors, available);
-            colorVertex(cv, cr); // Assign the found color
-            calculateDsatur(cv);
+            int vertex = graph.vertexHighstAdjDegree(v);
+            // Find the appropriate color for this vertex
+            int cr = findRightColor(graph, vertex, resultColors, available);
+            colorVertex(vertex, cr); // Assign the found color
+            calculateDsatur(vertex);
 
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
             count++;
         }
+        printSolution();
     }
 
     @Override

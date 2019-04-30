@@ -56,9 +56,8 @@ public class welsh_Powell_Algorithm extends GraphColoring {
      */
     private int[] removeColored(ArrayList<Integer> alreadyColor, int[] sortedArray) {
         int[] b = sortedArray;
-        for (int i = 0; i < alreadyColor.size(); i++) {
-            b = remove(b, alreadyColor.get(i));
-        }
+        for (Integer integer : alreadyColor)
+            b = remove(b, integer);
         return b;
     }
 
@@ -69,7 +68,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
         int[] verts = sortDesc(vertices);
         // Colour the first vertex in the list.
         int color = 0;
-        ArrayList<Integer> alreadyColored = new ArrayList<Integer>();
+        ArrayList<Integer> alreadyColored = new ArrayList<>();
 
         while (V > 0) {
 
@@ -93,7 +92,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
              */
             color++;
         }
-        printTest(resultColors, graph);
+        printSolution();
     }
 
     @Override

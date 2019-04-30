@@ -33,22 +33,29 @@ public class Largest_First_Algorithm extends GraphColoring {
     @Override
     public void executeAlgorithm() {
         int count = 1;
-        // Assign the first color to first vertex
+        /*
+         * Assign the first color to first vertex with highest degree
+         */
         int vertex0 = graph.vertexHighstAdjDegree(graph.getVertices());
         setColor(vertex0, 0, resultColors);
         // remove the colored Vertex from the Vertices Array
-        int[] descend = remove(graph.getVertices(), vertex0);
+        int[] remainingVertices = remove(graph.getVertices(), vertex0);
 
         while (count < V) {
-            int vertex = graph.vertexHighstAdjDegree(descend);
-            int cr = assignRightColor(graph, vertex, resultColors, available);
+            int vertex = graph.vertexHighstAdjDegree(remainingVertices);
+            /*
+             * find the suitable color for this vertex
+             */
+            int cr = findRightColor(graph, vertex, resultColors, available);
             // Assign the found color to the Vertex
             setColor(vertex, cr, resultColors);
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
             count++;
-            descend = remove(descend, vertex);
+            remainingVertices = remove(remainingVertices, vertex);
         }
+
+        printSolution();
     }
 
     @Override

@@ -6,37 +6,37 @@ import java.util.Iterator;
 
 public abstract class GraphColoring {
 
-    public GraphColoring() {
+    protected GraphColoring() {
     }
-
-    // the extended Algorithms must be executed
-    public abstract void executeAlgorithm();
-
-    // this method describes the implimented Algorithm
-    public abstract void description();
 
     /*
-     * This method prints the test of the Algorithms
+     * the first extended Algorithms must be executed
+     * the seconds method describes the implemented Algorithm
+     * the third method prints the test of the Algorithms
      */
+    public abstract void executeAlgorithm();
+
+    public abstract void description();
+
     public abstract void printSolution();
 
-    public void setColor(int v, int color, int[] resultColors) {
-        resultColors[v] = color;
+    protected void setColor(int vertex, int color, int[] resultColors) {
+        resultColors[vertex] = color;
     }
 
-    public int getColor(int v, int resultColor[]) {
-        return resultColor[v];
+    private int getColor(int vertex, int[] resultColor) {
+        return resultColor[vertex];
     }
 
     // remove an element from Array
-    public int[] remove(int[] arr, int v) {
-        int ret[] = new int[arr.length - 1];
+    protected int[] remove(int[] arr, int v) {
+        int[] ret = new int[arr.length - 1];
         if (arr.length > 1) {
             int cout = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] == v) {
+            for (int i1 : arr) {
+                if (i1 == v) {
                 } else {
-                    ret[cout] = arr[i];
+                    ret[cout] = i1;
                     cout++;
                 }
             }
@@ -45,11 +45,8 @@ public abstract class GraphColoring {
             return ret;
     }
 
-    @SuppressWarnings("Duplicates")
-    public int assignRightColor(Graph graph, int cv, int[] resultColors, boolean[] available) {
-        Iterator<Integer> it = graph.getEdges(cv).iterator();
-        while (it.hasNext()) {
-            int i = it.next();
+    protected int findRightColor(Graph graph, int cv, int[] resultColors, boolean[] available) {
+        for (int i : graph.getEdges(cv)) {
             if (getColor(i, resultColors) != -1) {
                 available[getColor(i, resultColors)] = false;
             }
@@ -64,7 +61,7 @@ public abstract class GraphColoring {
         return cr;
     }
 
-    public boolean colorIsUsed(int d, int a[], int lenght) {
+    private boolean colorIsUsed(int d, int[] a, int lenght) {
         if (d == -1)
             return true;
         if (lenght == 0 && a[lenght] != -1) {
@@ -77,7 +74,7 @@ public abstract class GraphColoring {
         return false;
     }
 
-    public int resultsColors(int resultColor[]) {
+    private int computeResultsColors(int[] resultColor) {
         int result = 0;
         for (int i = 0; i < resultColor.length; i++) {
             if (!colorIsUsed(getColor(i, resultColor), resultColor, i)) {
@@ -87,14 +84,12 @@ public abstract class GraphColoring {
         return result;
     }
 
-    public boolean test(int resultColors[], Graph graph) {
+    private boolean test(int[] resultColors, Graph graph) {
         for (int i = 0; i < resultColors.length; i++) {
             if (resultColors[i] == -1)
                 return false;
 
-            Iterator<Integer> itr = graph.getEdges(i).iterator();
-            while (itr.hasNext()) {
-                int v = itr.next();
+            for (int v : graph.getEdges(i)) {
                 if (graph.isEdges(i, v) && resultColors[i] == resultColors[v]) {
                     return false;
                 }
@@ -106,13 +101,13 @@ public abstract class GraphColoring {
     /*
      * This method shows how many colors we need it to color the Graph
      */
-    public String toString(int resultColor[]) {
+    private String toString(int[] resultColor) {
         String print = "";
-        print += "We need " + resultsColors(resultColor) + " Colors to Color this Graph\n";
+        print += "We need " + computeResultsColors(resultColor) + " Colors to Color this Graph\n";
         return print;
     }
 
-    public void printTest(int[] resultColors, Graph graph) {
+    protected void printTest(int[] resultColors, Graph graph) {
         if (test(resultColors, graph))
             System.out.println("+++++++++++++++++++ the Algorithms runs correctly +++++++++++++++++++++");
         else

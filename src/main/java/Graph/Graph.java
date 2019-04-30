@@ -8,7 +8,7 @@ public class Graph {
     // No. of vertices
     private int V;
     // Adjacency List
-    private HashSet<Integer>[] adj;
+    private HashSet[] adj;
     private int[] vertices;
 
     /*
@@ -19,7 +19,7 @@ public class Graph {
         this.adj = new HashSet[V];
 
         for (int i = 0; i < V; ++i)
-            adj[i] = new HashSet<Integer>();
+            adj[i] = new HashSet<>();
 
         this.vertices = new int[V];
         for (int i = 0; i < V; i++) {
@@ -75,7 +75,7 @@ public class Graph {
     /*
      * This method returns the Degree of the intended Vertex
      */
-    public int getVertexDegree(int v) {
+    private int getVertexDegree(int v) {
         return getEdges(v).size();
     }
 
@@ -111,17 +111,18 @@ public class Graph {
      * ----------------------- print methods ------------------------------
      */
     public String toString() {
-        String string = "";
+        StringBuilder string = new StringBuilder();
+        string.append("+++++++++ This is the representation of the Graph as Linked List: +++++++++ \n");
         for (int v = 0; v < V; v++) {
-            string += " Adjacency list of vertex " + v + " Edges of Vertex: " + v + ":  " + v;
+            string.append(" Adjacency list of vertex ").append(v).append(" Edges of Vertex: ").append(v).append(":  ").append(v);
 
             for (Integer pCrawl : getEdges(v)) {
 
-                string += " -> " + pCrawl;
+                string.append(" -> ").append(pCrawl);
             }
-            string += "\n";
+            string.append("\n");
         }
-        return string;
+        return string.toString();
     }
 
     public void print() {
