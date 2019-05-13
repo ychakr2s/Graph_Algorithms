@@ -30,7 +30,7 @@ public class Graph {
     /*
      * The first method returns the vertices of this Graph.
      * the second method returns the number of the vertices.
-     * the third returns the edges of each vertex
+     * the third returns all edges of an vertex
      */
     public int[] getVertices() {
         return this.vertices;

@@ -29,9 +29,8 @@ public class Greedy_Algorithm extends GraphColoring {
         Arrays.fill(available, true);
     }
 
-    @SuppressWarnings("Duplicates")
     @Override
-    public void executeAlgorithm() {
+    public void executeGraphAlgorithms() {
         // Assign the first color to first vertex
         setColor(0, 0, resultColors);
 

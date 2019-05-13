@@ -2,8 +2,6 @@ package AbstractGraphColoring;
 
 import Graph.Graph;
 
-import java.util.Iterator;
-
 public abstract class GraphColoring {
 
     protected GraphColoring() {
@@ -14,7 +12,7 @@ public abstract class GraphColoring {
      * the seconds method describes the implemented Algorithm
      * the third method prints the test of the Algorithms
      */
-    public abstract void executeAlgorithm();
+    public abstract void executeGraphAlgorithms();
 
     public abstract void description();
 
@@ -24,7 +22,7 @@ public abstract class GraphColoring {
         resultColors[vertex] = color;
     }
 
-    private int getColor(int vertex, int[] resultColor) {
+    protected int getColor(int vertex, int[] resultColor) {
         return resultColor[vertex];
     }
 
@@ -46,6 +44,7 @@ public abstract class GraphColoring {
     }
 
     protected int findRightColor(Graph graph, int cv, int[] resultColors, boolean[] available) {
+        // Process all adjacent vertices and flag their colors as unavailable
         for (int i : graph.getEdges(cv)) {
             if (getColor(i, resultColors) != -1) {
                 available[getColor(i, resultColors)] = false;
@@ -109,9 +108,9 @@ public abstract class GraphColoring {
 
     protected void printTest(int[] resultColors, Graph graph) {
         if (test(resultColors, graph))
-            System.out.println("+++++++++++++++++++ the Algorithms runs correctly +++++++++++++++++++++");
+            System.out.println("+++++++++++++++++++ the Algorithm runs correctly +++++++++++++++++++++");
         else
-            System.out.println("+++++++++++++++++++ the Algorithms runs wrongly +++++++++++++++++++++++");
+            System.out.println("+++++++++++++++++++ the Algorithm runs wrongly +++++++++++++++++++++++");
         System.out.println(toString(resultColors));
     }
 }

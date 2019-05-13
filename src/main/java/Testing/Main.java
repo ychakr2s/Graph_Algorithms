@@ -1,14 +1,13 @@
 package Testing;
 
 import AbstractGraphColoring.GraphColoring;
+import Exact_Algorithm.Backtracking;
 import Graph.Graph;
-import Heuristic_Algorithms.Largest_First_Algorithm;
-import Heuristic_Algorithms.dSatur_Algorithm;
-import Heuristic_Algorithms.welsh_Powell_Algorithm;
+import Heuristic_Algorithms.*;
 
 public class Main {
     public static void main(String[] args) {
-        Graph g = new Graph(8);
+        Graph g = new Graph(12);
         g.addEdge(0, 1);
         g.addEdge(0, 6);
         g.addEdge(0, 7);
@@ -25,13 +24,28 @@ public class Main {
 
         g.print();
 
+        GraphColoring rlf = new Recursive_Largest_First_Algorithm(g);
+        rlf.executeGraphAlgorithms();
+
+        GraphColoring dfs = new Depth_First_Search_Algorithm(g);
+        dfs.executeGraphAlgorithms();
+
+        GraphColoring brf = new Breadth_First_Search_Algorithm(g);
+        brf.executeGraphAlgorithms();
+
         GraphColoring lf = new Largest_First_Algorithm(g);
-        lf.executeAlgorithm();
+        lf.executeGraphAlgorithms();
+
+        GraphColoring gr = new Greedy_Algorithm(g);
+        gr.executeGraphAlgorithms();
 
         GraphColoring wp = new welsh_Powell_Algorithm(g);
-        wp.executeAlgorithm();
+        wp.executeGraphAlgorithms();
 
         GraphColoring dS = new dSatur_Algorithm(g);
-        dS.executeAlgorithm();
+        dS.executeGraphAlgorithms();
+
+        GraphColoring bk = new Backtracking(g,5);
+        bk.executeGraphAlgorithms();
     }
 }

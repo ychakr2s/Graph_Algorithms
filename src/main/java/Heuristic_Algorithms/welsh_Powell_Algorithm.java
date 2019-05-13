@@ -62,7 +62,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeAlgorithm() {
+    public void executeGraphAlgorithms() {
 
         // List the vertices in order of descending valence i.e.valence degree(v(i)) >= degree(v(i+1)) .
         int[] verts = sortDesc(vertices);
@@ -97,7 +97,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
 
     @Override
     public void description() {
-        System.out.println("this is the implementation of the Welsh-Powell Algorithm ");
+        System.out.println("This is the implementation of the Welsh-Powell Algorithm ");
     }
 
     @Override
