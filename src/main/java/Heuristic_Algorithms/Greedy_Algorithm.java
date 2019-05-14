@@ -45,6 +45,7 @@ public class Greedy_Algorithm extends GraphColoring {
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
         }
+        printSolution();
     }
 
     @Override
