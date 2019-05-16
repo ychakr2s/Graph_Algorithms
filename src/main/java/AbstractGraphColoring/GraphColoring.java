@@ -73,7 +73,7 @@ public abstract class GraphColoring {
         return false;
     }
 
-    private int computeResultsColors(int[] resultColor) {
+    protected int computeResultsColors(int[] resultColor) {
         int result = 0;
         for (int i = 0; i < resultColor.length; i++) {
             if (!colorIsUsed(getColor(i, resultColor), resultColor, i)) {
