@@ -20,7 +20,7 @@ public class Main {
         g.addEdge(5, 7);
         g.addEdge(6, 7);
         Linear_Programming lp = new Linear_Programming(g);
-        lp.executeGraphAlgorithm();
+//        lp.executeGraphAlgorithm();
 //        lp.solve();
 
 

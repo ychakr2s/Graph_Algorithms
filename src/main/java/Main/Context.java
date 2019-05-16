@@ -14,7 +14,7 @@ class Context {
     void execute() {
         //delegates behavior to Strategy object
         for (GraphColoring algorithm : algorithms) {
-            algorithm.executeGraphAlgorithm();
+//            algorithm.executeGraphAlgorithm();
         }
     }
 
