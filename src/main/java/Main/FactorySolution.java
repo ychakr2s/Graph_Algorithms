@@ -8,13 +8,13 @@ import Heuristic_Algorithms.*;
 import java.util.ArrayList;
 
 public class FactorySolution {
-    static Graph gr;
+    Graph gr;
 
     FactorySolution(Graph graph) {
         gr = graph;
     }
 
-    public ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms) {
+    public ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr) {
         ArrayList<GraphColoring> algorithm = new ArrayList<>();
 //        Graph gr = new Graph(2);
         for (int i = 0; i < algorithms.size(); i++) {
