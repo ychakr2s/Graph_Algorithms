@@ -79,7 +79,7 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
         utilBFS(chooseStart);

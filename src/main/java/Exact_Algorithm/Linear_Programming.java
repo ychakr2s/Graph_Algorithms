@@ -20,8 +20,7 @@ public class Linear_Programming extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
-
+    public void executeGraphAlgorithm() {
 
         try {
             // Instantiate an empty model
@@ -61,12 +60,8 @@ public class Linear_Programming extends GraphColoring {
             model.addMinimize(obj);
 
             /*
-             * Define the constraints
-             */
-
-            /*
-             * first Constraint Sum(Xi,k) = 1. Equation ensures that each vertex receives
-             * exactly one color.
+             * +++++++++++++++++ Define the constraints ++++++++++++++++++++
+             * first Constraint Sum(Xi,k) = 1. Equation ensures that each vertex receives exactly one color.
              */
             for (int i = 0; i < V; i++) { // for each variable
                 IloLinearNumExpr constraint = model.linearNumExpr();

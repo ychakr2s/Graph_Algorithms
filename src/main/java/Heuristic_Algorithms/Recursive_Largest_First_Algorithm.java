@@ -89,7 +89,7 @@ public class Recursive_Largest_First_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         // now i will produce Color for the uncolored Vertices
 
         X = vertices;

@@ -70,7 +70,7 @@ public class Backtracking extends GraphColoring {
      * colors cannot be assigned, otherwise return true and prints the Solution.
      */
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         if (graphColoringUtil(0)) {
             printSolution();
         } else

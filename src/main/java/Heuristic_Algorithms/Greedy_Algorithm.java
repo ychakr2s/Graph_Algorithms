@@ -30,7 +30,7 @@ public class Greedy_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         // Assign the first color to first vertex
         setColor(0, 0, resultColors);
 

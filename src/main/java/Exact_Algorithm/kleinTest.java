@@ -23,7 +23,7 @@ public class kleinTest {
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
             Linear_Programming l= new Linear_Programming(g);
-            l.executeGraphAlgorithms();
+            l.executeGraphAlgorithm();
             System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 //			reserve lp = new reserve();
 //			lp.solve(g);

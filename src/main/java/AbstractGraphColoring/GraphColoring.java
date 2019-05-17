@@ -12,7 +12,7 @@ public abstract class GraphColoring {
      * the seconds method describes the implemented Algorithm
      * the third method prints the test of the Algorithms
      */
-    public abstract void executeGraphAlgorithms();
+    public abstract void executeGraphAlgorithm();
 
     public abstract void description();
 

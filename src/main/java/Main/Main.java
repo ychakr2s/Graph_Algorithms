@@ -3,6 +3,8 @@ package Main;
 import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Graph g = new Graph(12);
@@ -19,26 +21,25 @@ public class Main {
         g.addEdge(5, 6);
         g.addEdge(5, 7);
         g.addEdge(6, 7);
-        Linear_Programming lp = new Linear_Programming(g);
+//        Linear_Programming lp = new Linear_Programming(g);
 //        lp.executeGraphAlgorithm();
 //        lp.solve();
 
+        ArrayList<String> algorithms = new ArrayList<>();
 
-//        ArrayList<GraphColoring> algorithms = new ArrayList<>();
-//
-//
-//        algorithms.add(new Recursive_Largest_First_Algorithm(g));
-//        algorithms.add(new Depth_First_Search_Algorithm(g));
-//        algorithms.add(new Breadth_First_Search_Algorithm(g));
-//        algorithms.add(new Largest_First_Algorithm(g));
-//        algorithms.add(new Backtracking(g, 5));
-//        Context imp = new Context(algorithms);
+        algorithms.add("Recursive_Largest_First_Algorithm");
+        algorithms.add("Depth_First_Search_Algorithm");
+        algorithms.add("Linear_Programming");
+        algorithms.add("dSatur_Algorithm");
+        algorithms.add("Largest_First_Algorithm");
+        FactorySolution fc = new FactorySolution();
+        Context imp = new Context(fc.getAlgorithms(algorithms, g));
 
 //        Gson gs = new Gson();
 //        String json = gs.toJson(g);
 //        System.out.println(json);
 
-//        imp.execute();
+        imp.execute();
 
     }
 }
