@@ -1,5 +1,7 @@
 package Graph;
 
+import com.google.gson.Gson;
+
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -7,19 +9,19 @@ public class Graph {
 
     // No. of vertices
     private int V;
-    // Adjacency List
-    private HashSet[] adj;
     private int[] vertices;
+    // Adjacency List
+    private HashSet[] edges;
 
     /*
      * Constructor
      */
     public Graph(int v) {
         this.V = v;
-        this.adj = new HashSet[V];
+        this.edges = new HashSet[V];
 
         for (int i = 0; i < V; ++i)
-            adj[i] = new HashSet<>();
+            edges[i] = new HashSet<>();
 
         this.vertices = new int[V];
         for (int i = 0; i < V; i++) {
@@ -41,7 +43,7 @@ public class Graph {
     }
 
     public HashSet<Integer> getEdges(int v) {
-        return this.adj[v];
+        return this.edges[v];
     }
 
     /*
@@ -51,8 +53,7 @@ public class Graph {
         if (to > getNumVertices() || from > getNumVertices())
             System.out.println("The vertices does not exists");
         else {
-            if (from == to) {
-            } else {
+            if (from != to) {
                 getEdges(from).add(to);
                 getEdges(to).add(from);
             }
@@ -114,7 +115,7 @@ public class Graph {
         StringBuilder string = new StringBuilder();
         string.append("+++++++++ This is the representation of the Graph as Linked List: +++++++++ \n");
         for (int v = 0; v < V; v++) {
-            string.append(" Adjacency list of vertex ").append(v).append(" Edges of Vertex: ").append(v).append(":  ").append(v);
+            string.append("Edges of Vertex: ").append(v).append(":  ").append(v);
 
             for (Integer pCrawl : getEdges(v)) {
 
@@ -125,7 +126,47 @@ public class Graph {
         return string.toString();
     }
 
+    public String toJsonString() {
+        StringBuilder string = new StringBuilder();
+        for (int v = 0; v < V; v++) {
+
+//            string.append("{").
+        }
+        return "";
+    }
+
+    public String toStringJson() {
+        StringBuilder string = new StringBuilder();
+        string.append("{ \n");
+        for (int v = 0; v < V; v++) {
+            string.append("  ").append(v).append(": [");
+            int cou = 0;
+            for (Integer pCrawl : getEdges(v)) {
+                cou++;
+                if (cou == getEdges(v).size()) {
+                    string.append(pCrawl).append("]");
+                } else
+                    string.append(pCrawl).append(", ");
+
+            }
+            string.append("\n");
+        }
+        string.append("}");
+        return string.toString();
+    }
+
     public void print() {
         System.out.println(toString());
     }
+
+    public void printJson() {
+        System.out.println(toStringJson());
+    }
+
+
 }
+
+
+
+
+

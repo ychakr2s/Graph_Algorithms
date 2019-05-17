@@ -71,7 +71,7 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
         // Call the recursive helper function to print DFS traversal

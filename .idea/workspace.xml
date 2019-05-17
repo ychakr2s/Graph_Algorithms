@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f185698-6f38-462c-8cd1-c7f965e58e54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/myColors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Testing/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Testing/TestFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/FactorySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/FactorySolution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Testing/Context.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Testing/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Testing/TestFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Testing/facebook_combined.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Greedy_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Greedy_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/dSatur_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/welsh_Powell_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Testing/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Testing/TestFile.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,13 +42,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Graph_Algorithm_Implementation" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Testing/TestFile.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+            <state relative-caret-position="515">
+              <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,10 +60,109 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="273">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/myColors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/FactorySolution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-64">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+              <folding>
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Graph/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2392">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#4128#4129#0" expanded="true" />
+                <element signature="e#4174#4175#0" expanded="true" />
+                <element signature="e#4205#4206#0" expanded="true" />
+                <element signature="e#4255#4256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/TestFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/Context.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,6 +176,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edg</find>
+      <find>toStr</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,19 +189,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../../../Implementation/BCK_GreeBSF_GreeDSF_WP/Graph_Coloring_Algorithms_Implementation/src/graphColoringAlgorithms/GraphColoringBackTracking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Testing/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Graph/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Testing/TestFile.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/testFileJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/Contex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/implement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/Context.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Testing/TestFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/Context.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/TestFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/FactorySolution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/myColors.java" />
       </list>
     </option>
   </component>
@@ -76,6 +221,22 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Graph_Algorithm_Implementation" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Graph_Algorithm_Implementation" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="320" />
@@ -93,89 +254,78 @@
         <subPane>
           <expand>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="AbstractGraphColoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Exact_Algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Heuristic_Algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graph_Algorithm_Implementation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Implementation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557843325423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558015009552" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -194,7 +344,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestFile">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="Graph_Algorithm_Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Testing.Main" />
       <module name="Graph_Algorithm_Implementation" />
@@ -223,10 +386,14 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.TestFile" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_FIELDS,SHOW_ANONYMOUS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -256,7 +423,12 @@
       <workItem from="1556883492581" duration="69000" />
       <workItem from="1557703123112" duration="671000" />
       <workItem from="1557764438235" duration="15359000" />
-      <workItem from="1557834464310" duration="6043000" />
+      <workItem from="1557834464310" duration="25692000" />
+      <workItem from="1557922884448" duration="9691000" />
+      <workItem from="1557940890566" duration="7609000" />
+      <workItem from="1557959027389" duration="458000" />
+      <workItem from="1557959503868" duration="9000" />
+      <workItem from="1557969000659" duration="7405000" />
     </task>
     <task id="LOCAL-00001" summary="The four algorithms are finished, now i will start to program BACKTRACKING algorithm">
       <created>1556626892123</created>
@@ -276,37 +448,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73525000" />
+    <option name="totallyTimeSpent" value="118346000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21140939" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67681897" visible="true" weight="0.21140939" />
+      <window_info id="Structure" order="1" sideWeight="0.32209107" side_tool="true" weight="0.21140939" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50073206" side_tool="true" weight="0.21140939" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21229868" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.20644216" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26647145" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29136163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32796487" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.38213763" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.18448023" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Mongo Explorer" order="6" />
@@ -315,39 +487,6 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.38213763" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Mongo Explorer" order="6" />
-      <window_info anchor="right" id="Snyk" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -395,43 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1383">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="110" column="70" selection-start-line="110" selection-start-column="70" selection-end-line="110" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3036">
-          <caret line="132" column="31" lean-forward="true" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/stream/AbstractPipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -439,109 +541,227 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="521" selection-start-line="521" selection-end-line="521" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/graph.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="198">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/testFileJson.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/facebook_combined.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/Context.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/TestFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/Context.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-123">
-          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+        <state relative-caret-position="207">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2531#2532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="-2392">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#3343#3344#0" expanded="true" />
-            <element signature="e#3389#3390#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
+            <element signature="e#4174#4175#0" expanded="true" />
+            <element signature="e#4205#4206#0" expanded="true" />
+            <element signature="e#4255#4256#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/FactorySolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="-64">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/facebook_combined.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2027289">
-          <caret line="88230" column="9" lean-forward="true" selection-start-line="88230" selection-start-column="9" selection-end-line="88230" selection-end-column="9" />
+        <state relative-caret-position="273">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Testing/TestFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        <state relative-caret-position="354">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/TestFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/myColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Graph_Algorithm_Implementation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.gson:gson:2.8.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

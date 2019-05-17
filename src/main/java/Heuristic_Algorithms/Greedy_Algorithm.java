@@ -30,7 +30,7 @@ public class Greedy_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         // Assign the first color to first vertex
         setColor(0, 0, resultColors);
 
@@ -45,7 +45,8 @@ public class Greedy_Algorithm extends GraphColoring {
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
         }
-        printSolution();
+//        printSolution();
+//        System.out.println(execute());
     }
 
     @Override
@@ -58,5 +59,27 @@ public class Greedy_Algorithm extends GraphColoring {
         description();
         printTest(resultColors, graph);
     }
+    public String execute(){
+        // Assign the first color to first vertex
+//        setColor(0, 0, resultColors);
+//
+//        // Assign colors to remaining V-1 vertices
+//        for (int vertex = 1; vertex < V; vertex++) {
+//            /*
+//             * Process all adjacent vertices and flag their colors as unavailable.
+//             */
+//            int cr = findRightColor(graph, vertex, resultColors, available);
+//            setColor(vertex, cr, resultColors); // Assign the found color
+//
+//            // Reset the values back to true for the next iteration
+//            Arrays.fill(available, true);
+//        }
+        executeGraphAlgorithm();
+       return "" +computeResultsColors(resultColors);
+    }
+
+//    public String jsonString() {
+//        return "" + computeResultsColors(resultColors);
+//    }
 
 }

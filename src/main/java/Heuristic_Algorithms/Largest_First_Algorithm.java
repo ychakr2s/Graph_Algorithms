@@ -31,7 +31,7 @@ public class Largest_First_Algorithm extends GraphColoring {
 
     // @SuppressWarnings("Duplicates")
     @Override
-    public void executeGraphAlgorithms() {
+    public void executeGraphAlgorithm() {
         int count = 1;
         /*
          * Assign the first color to first vertex with highest degree

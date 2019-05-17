@@ -12,7 +12,7 @@ public abstract class GraphColoring {
      * the seconds method describes the implemented Algorithm
      * the third method prints the test of the Algorithms
      */
-    public abstract void executeGraphAlgorithms();
+    public abstract void executeGraphAlgorithm();
 
     public abstract void description();
 
@@ -73,7 +73,7 @@ public abstract class GraphColoring {
         return false;
     }
 
-    private int computeResultsColors(int[] resultColor) {
+    public int computeResultsColors(int[] resultColor) {
         int result = 0;
         for (int i = 0; i < resultColor.length; i++) {
             if (!colorIsUsed(getColor(i, resultColor), resultColor, i)) {
@@ -102,9 +102,14 @@ public abstract class GraphColoring {
      */
     private String toString(int[] resultColor) {
         String print = "";
-        print += "We need " + computeResultsColors(resultColor) + " Colors to Color this Graph\n";
+        print += "We need " + computeResultsColors(resultColor) + " Colors to color this Graph\n";
         return print;
     }
+
+//    public String execute(){
+////        toString(res)
+//        return "";
+//    }
 
     protected void printTest(int[] resultColors, Graph graph) {
         if (test(resultColors, graph))
@@ -113,4 +118,5 @@ public abstract class GraphColoring {
             System.out.println("+++++++++++++++++++ the Algorithm runs wrongly +++++++++++++++++++++++");
         System.out.println(toString(resultColors));
     }
+
 }
