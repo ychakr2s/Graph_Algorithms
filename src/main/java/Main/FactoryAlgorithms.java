@@ -7,8 +7,11 @@ import Heuristic_Algorithms.*;
 
 import java.util.ArrayList;
 
-public class FactorySolution {
-    FactorySolution() {
+/*
+ * Factory generates objects of concrete class based on given information.
+ */
+public class FactoryAlgorithms {
+    FactoryAlgorithms() {
     }
 
     public ArrayList<GraphColoring> getAlgorithms(ArrayList<String> algorithms, Graph gr) {
@@ -40,7 +43,6 @@ public class FactorySolution {
                 algorithm.add(new Linear_Programming(gr));
             }
         }
-
         return algorithm;
     }
 }

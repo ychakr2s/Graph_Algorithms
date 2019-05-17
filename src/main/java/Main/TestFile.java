@@ -51,14 +51,14 @@ public class TestFile {
 //            algorithms.add(new Breadth_First_Search_Algorithm(gr));
 //            algorithms.add(new Largest_First_Algorithm(gr));
 //            algorithms.add(new Backtracking(gr, 5));
-            algorithms.add(new Linear_Programming(gr));
+            algorithms.add(new Depth_First_Search_Algorithm(gr));
             Context imp = new Context(algorithms);
 
             imp.execute();
 
-            Gson gs = new Gson();
-            String json = gs.toJson(gr);
-            System.out.println(json);
+//            Gson gs = new Gson();
+//            String json = gs.toJson(gr);
+//            System.out.println(json);
 
 
         } catch (IOException e) {

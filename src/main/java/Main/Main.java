@@ -1,6 +1,5 @@
 package Main;
 
-import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 
 import java.util.ArrayList;
@@ -32,7 +31,7 @@ public class Main {
         algorithms.add("Linear_Programming");
         algorithms.add("dSatur_Algorithm");
         algorithms.add("Largest_First_Algorithm");
-        FactorySolution fc = new FactorySolution();
+        FactoryAlgorithms fc = new FactoryAlgorithms();
         Context imp = new Context(fc.getAlgorithms(algorithms, g));
 
 //        Gson gs = new Gson();

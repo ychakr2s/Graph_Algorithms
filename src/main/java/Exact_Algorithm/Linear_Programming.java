@@ -38,8 +38,7 @@ public class Linear_Programming extends GraphColoring {
             }
 
             /*
-             * Y is a binary variable (0 or 1) to hold colors. Yi means whether the color i
-             * is used or not.
+             * Y is a binary variable (0 or 1) to hold colors. Yi means whether the color i is used or not.
              */
             IloIntVar[] Y = new IloIntVar[V];
             for (int j = 0; j < V; j++) {
@@ -67,7 +66,7 @@ public class Linear_Programming extends GraphColoring {
                 IloLinearNumExpr constraint = model.linearNumExpr();
                 for (int j = 0; j < V; j++) {
                     if (g.isEdges(i, j)) {
-//						constraint.addTerm(1, x[i][j]);
+                        //	constraint.addTerm(1, x[i][j]);
                     } else
                         constraint.addTerm(1, x[i][j]);
 
