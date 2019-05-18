@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -9,9 +10,6 @@ import java.util.Random;
 
 public class Breadth_First_Search_Algorithm extends GraphColoring {
 
-    private Graph graph;
-    private int V;
-
     // No. of vertices
     private boolean[] visited;
     private boolean[] available;
@@ -19,8 +17,7 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
     // Constructor
     public Breadth_First_Search_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
+        super(g);
 
         // Mark all the vertices as not visited(By default set as false)
         this.visited = new boolean[V];
@@ -30,7 +27,6 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
         this.available = new boolean[V];
         Arrays.fill(available, true);
-
     }
 
     private void assignColor(int node) {
@@ -79,7 +75,7 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
         utilBFS(chooseStart);
@@ -90,6 +86,7 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
             }
         }
         printSolution();
+        return new Algorithm(computeResultsColors(resultColors), resultColors, "Breadth First Search");
     }
 
     @Override

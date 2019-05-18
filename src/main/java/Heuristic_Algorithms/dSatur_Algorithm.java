@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -7,9 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class dSatur_Algorithm extends GraphColoring {
-    private Graph graph;
     private int[] dSatur;
-    private int V;
     private boolean[] alreadyColored;
     private boolean[] available;
     private int[] resultColors;
@@ -18,8 +17,7 @@ public class dSatur_Algorithm extends GraphColoring {
      * Constructor
      */
     public dSatur_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
+        super(g);
         this.dSatur = new int[V];
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
@@ -49,9 +47,8 @@ public class dSatur_Algorithm extends GraphColoring {
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] >= max) {
-                if (arr[i] > max) {
-                    theReturns.removeAll(theReturns);
-                }
+                if (arr[i] > max)
+                    theReturns.clear();
                 max = arr[i];
                 theReturns.add(i);
             }
@@ -67,7 +64,7 @@ public class dSatur_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         int count = 0;
         /*
          * The uncolored vertex that has the largest degree in the degree set 𝐷𝑒𝑔(𝑣𝑖) is selected for coloring.
@@ -95,6 +92,7 @@ public class dSatur_Algorithm extends GraphColoring {
             count++;
         }
         printSolution();
+        return new Algorithm(computeResultsColors(resultColors), resultColors, "DSATUR algorithm");
     }
 
     @Override

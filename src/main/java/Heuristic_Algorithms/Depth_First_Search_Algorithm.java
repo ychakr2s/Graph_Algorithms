@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -7,8 +8,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Depth_First_Search_Algorithm extends GraphColoring {
-    private Graph graph;
-    private int V; // No. of vertices
+
     private boolean[] visited;
     private boolean[] alreadyColored;
     private boolean[] available;
@@ -16,8 +16,7 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
 
     // Constructor
     public Depth_First_Search_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = g.getNumVertices();
+        super(g);
 
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
@@ -71,7 +70,7 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
         // Call the recursive helper function to print DFS traversal
@@ -83,6 +82,7 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
             }
         }
         printSolution();
+        return new Algorithm(computeResultsColors(resultColors), resultColors, "DEPTH FIRST SEARCH");
     }
 
     @Override

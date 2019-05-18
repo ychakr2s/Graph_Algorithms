@@ -3,16 +3,21 @@ package AbstractGraphColoring;
 import Graph.Graph;
 
 public abstract class GraphColoring {
+    protected Graph graph;
+    protected int V;
 
-    protected GraphColoring() {
+    protected GraphColoring(Graph gr) {
+        this.graph = gr;
+        // No. of vertices
+        this.V = gr.getNumVertices();
     }
 
     /*
-     * the first extended Algorithms must be executed
-     * the seconds method describes the implemented Algorithm
-     * the third method prints the test of the Algorithms
+     * The first extended Algorithms must be executed.
+     * The seconds method describes the implemented Algorithm.
+     * The third method prints the test of the Algorithms.
      */
-    public abstract void executeGraphAlgorithm();
+    public abstract Algorithm executeGraphAlgorithm();
 
     public abstract void description();
 
@@ -22,7 +27,7 @@ public abstract class GraphColoring {
         resultColors[vertex] = color;
     }
 
-    protected int getColor(int vertex, int[] resultColor) {
+    private int getColor(int vertex, int[] resultColor) {
         return resultColor[vertex];
     }
 
@@ -32,8 +37,7 @@ public abstract class GraphColoring {
         if (arr.length > 1) {
             int cout = 0;
             for (int i1 : arr) {
-                if (i1 == v) {
-                } else {
+                if (i1 != v) {
                     ret[cout] = i1;
                     cout++;
                 }
