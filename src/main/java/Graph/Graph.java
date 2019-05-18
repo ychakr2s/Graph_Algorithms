@@ -96,9 +96,6 @@ public class Graph {
                     vertex = ver[i];
                     count++;
                 }
-                if (getVertexDegree(ver[i]) == 0) {
-                    vertex = ver[i];
-                }
             }
         } else {
             vertex = ver[0];

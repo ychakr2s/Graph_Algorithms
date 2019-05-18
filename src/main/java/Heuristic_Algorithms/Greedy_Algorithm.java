@@ -48,7 +48,7 @@ public class Greedy_Algorithm extends GraphColoring {
             Arrays.fill(available, true);
         }
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors,"Greedy Algorithm");
+        return new Algorithm(computeResultsColors(resultColors), resultColors, "Greedy Algorithm");
     }
 
     @Override

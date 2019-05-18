@@ -1,6 +1,7 @@
 package Main;
 
 import AbstractGraphColoring.Algorithm;
+import AbstractGraphColoring.GraphColoring;
 import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import Heuristic_Algorithms.*;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Graph g = new Graph(12);
+        Graph g = new Graph(10);
         g.addEdge(0, 1);
         g.addEdge(0, 6);
         g.addEdge(0, 7);
@@ -45,6 +46,7 @@ public class Main {
 //        FactoryAlgorithms fc = new FactoryAlgorithms();
 //        Context imp = new Context(fc.getAlgorithms(algorithms, g));
 
+        // i miss here Factory for Algorithms
         Greedy_Algorithm gre = new Greedy_Algorithm(g);
         welsh_Powell_Algorithm wl = new welsh_Powell_Algorithm(g);
         Largest_First_Algorithm lg = new Largest_First_Algorithm(g);
@@ -55,7 +57,15 @@ public class Main {
         Linear_Programming lp = new Linear_Programming(g);
 
         ArrayList<Algorithm> alg = new ArrayList<>();
-        alg.add(gre.executeGraphAlgorithm());
+        ArrayList<GraphColoring> gc = new ArrayList<>();
+        gc.add(gre);
+        gc.add(wl);
+        gc.add(lg);
+        gc.add(ds);
+        Context ct = new Context(gc);
+//        ct.execute();
+        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++");
+
         alg.add(wl.executeGraphAlgorithm());
         alg.add(lg.executeGraphAlgorithm());
         alg.add(ds.executeGraphAlgorithm());
@@ -64,10 +74,9 @@ public class Main {
         alg.add(bfs.executeGraphAlgorithm());
         alg.add(lp.executeGraphAlgorithm());
 
-
 //        Algorithm alg = gre.executeGraphAlgorithm();
 
-        Solution sl = new Solution(g, alg);
+        Solution sl = new Solution(g, ct.execute());
 
         Gson gs = new Gson();
         String json = gs.toJson(sl);
