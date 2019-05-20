@@ -2,16 +2,14 @@ package Applications;
 
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
 public class testSudoku {
 
     public static void main(String[] args) {
 
-        String fileName = "C://Users/CYassine/Desktop/lines.txt";
+        String fileName = "D:\\ABschlussArbeit\\IDE_Project\\IntelliJ_Workspace\\Graph_Algorithm_Second\\src\\main\\java\\Input_Files\\lines.txt";
 
-//        SudokuGraph sd = new SudokuGraph();
         Solve_Sudoku bck = new Solve_Sudoku();
 
         String line = "";
@@ -36,12 +34,20 @@ public class testSudoku {
                 line = reader.readLine();
             }
             System.out.println("+++++++++++++++++++++++++++++++ Backtrcking+++++++++++++++++++++++++++++++++++++");
-            bck.executeGraphAlgorithm();
+//            bck.executeGraphAlgorithm();
 //            bck.printSudoku();
+            System.out.println(bck.executeGraphAlgorithm());
 
-            Gson gs = new Gson();
-            String json = gs.toJson(bck.executeGraphAlgorithm());
-            System.out.println(json);
+            File file = new File("D:\\ABschlussArbeit\\IDE_Project\\IntelliJ_Workspace\\Graph_Algorithm_Second\\src\\main\\java\\Output_Files\\sudoku.txt");
+
+            FileWriter fr = new FileWriter(file, true);
+            BufferedWriter br = new BufferedWriter(fr);
+            br.write(bck.executeGraphAlgorithm());
+            br.newLine();
+
+            br.close();
+            fr.close();
+
 
         } catch (Exception e) {
 

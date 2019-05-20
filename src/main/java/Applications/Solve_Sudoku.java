@@ -99,11 +99,12 @@ public class Solve_Sudoku extends SudokuGraph {
 
     public String toString() {
         StringBuilder string = new StringBuilder();
-        string.append("This is the representation of the Sudoku Graph: \n");
+        string.append("This is the Solution of the Sudoku Problem using Graph Coloring: \n");
+        string.append("\n");
+
         int i = 0;
         int j = 0;
         for (; i <= V - 9; i = i + 9) {
-            string.append("\n");
 
             for (; j < i + 9; j++) {
 
