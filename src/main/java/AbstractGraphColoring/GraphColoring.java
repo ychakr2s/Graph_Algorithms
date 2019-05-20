@@ -2,6 +2,9 @@ package AbstractGraphColoring;
 
 import Graph.Graph;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public abstract class GraphColoring {
     protected Graph graph;
     protected int V;
@@ -27,8 +30,33 @@ public abstract class GraphColoring {
         resultColors[vertex] = color;
     }
 
-    private int getColor(int vertex, int[] resultColor) {
+    protected int getColor(int vertex, int[] resultColor) {
         return resultColor[vertex];
+    }
+
+    /*
+     * This method returns the Vertex with the highest adjacency degree
+     */
+    public int vertexHighstAdjDegree(int[] ver) {
+        int max = 0;
+        int vertex = 0;
+        int count = 0;
+        if (ver.length > 0) {
+            for (int i1 : ver) {
+                if (graph.getVertexDegree(i1) > max) {
+                    max = graph.getVertexDegree(i1);
+                    vertex = i1;
+                }
+
+                if (graph.getVertexDegree(i1) == 0 && max == 0 && count == 0) {
+                    vertex = i1;
+                    count++;
+                }
+            }
+            return vertex;
+        } else
+            return -1;
+
     }
 
     // remove an element from Array
@@ -66,25 +94,39 @@ public abstract class GraphColoring {
 
     private boolean colorIsUsed(int d, int[] a, int lenght) {
         if (d == -1)
-            return true;
-        if (lenght == 0 && a[lenght] != -1) {
             return false;
+        if (lenght == 0 && a[lenght] != -1) {
+            return true;
         }
         for (int i = 0; i < lenght; i++) {
             if (d == a[i])
-                return true;
+                return false;
         }
-        return false;
+        return true;
     }
 
     protected int computeResultsColors(int[] resultColor) {
         int result = 0;
         for (int i = 0; i < resultColor.length; i++) {
-            if (!colorIsUsed(getColor(i, resultColor), resultColor, i)) {
+            if (colorIsUsed(getColor(i, resultColor), resultColor, i)) {
                 result++;
             }
         }
         return result;
+    }
+
+    /*
+     * this method determine the colors which is used to color this Graph
+     */
+    protected int[] usedColor(int[] resultColor) {
+        ArrayList<Integer> colors = new ArrayList<>();
+        for (int i = 0; i < resultColor.length; i++) {
+            if (colorIsUsed(getColor(i, resultColor), resultColor, i)) {
+                colors.add(getColor(i, resultColor));
+            }
+        }
+        Collections.sort(colors);
+        return colors.stream().mapToInt(i -> i).toArray();
     }
 
     private boolean test(int[] resultColors, Graph graph) {

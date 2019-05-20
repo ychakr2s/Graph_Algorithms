@@ -86,7 +86,8 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
             }
         }
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "Breadth First Search");
+
+        return new Algorithm("Breadth First Search", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

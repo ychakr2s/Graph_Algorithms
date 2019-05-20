@@ -23,10 +23,10 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     /*
      * This Method sorted the the Vertices descending according to the Vertex degree
      */
-    private int[] sortDesc(int[] a) {
+    public int[] sortDesc(int[] a) {
         int[] ret = new int[V];
         for (int i = 0; i < V; i++) {
-            ret[i] = graph.vertexHighstAdjDegree(a);
+            ret[i] = vertexHighstAdjDegree(a);
             a = remove(a, ret[i]);
         }
         return ret;
@@ -87,8 +87,9 @@ public class welsh_Powell_Algorithm extends GraphColoring {
              */
             color++;
         }
+
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "Welsh-Powell Algorithm");
+        return new Algorithm("Welsh-Powell Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

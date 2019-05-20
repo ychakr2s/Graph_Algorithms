@@ -82,7 +82,8 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
             }
         }
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "DEPTH FIRST SEARCH");
+
+        return new Algorithm("DEPTH FIRST SEARCH", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

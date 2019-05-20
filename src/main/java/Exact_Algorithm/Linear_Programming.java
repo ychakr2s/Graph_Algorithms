@@ -10,14 +10,11 @@ import ilog.cplex.IloCplex;
 import java.util.ArrayList;
 
 public class Linear_Programming extends GraphColoring {
-    //    private Graph g;
-//    private int V;
+
     private int[] resultColors;
 
     public Linear_Programming(Graph g) {
         super(g);
-//        this.g = g;
-//        this.V = g.getNumVertices();
         this.resultColors = new int[V];
     }
 
@@ -132,9 +129,8 @@ public class Linear_Programming extends GraphColoring {
             }
 
             // Suppress the auxiliary output printout
-            System.out.println();
-
             model.setParam(IloCplex.IntParam.SimDisplay, 0);
+
             // Solve the model
             boolean isSolved = model.solve();
 
@@ -142,7 +138,7 @@ public class Linear_Programming extends GraphColoring {
                 // Print out the objective function
                 System.out.println("obj_val = " + model.getObjValue());
 
-                // Print out the decision variables
+                // Fill ArrayList Colors with the used Colors
                 ArrayList<Integer> colors = new ArrayList<>();
                 for (int i = 0; i < V; i++) { // for each variable
                     for (int j = 0; j < V; j++) {
@@ -161,8 +157,9 @@ public class Linear_Programming extends GraphColoring {
         } catch (Exception e) {
             e.getMessage();
         }
+
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "Linear Programming Algorithm");
+        return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

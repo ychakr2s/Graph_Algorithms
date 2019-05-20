@@ -7,6 +7,7 @@ import Graph.Graph;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class dSatur_Algorithm extends GraphColoring {
     private int[] dSatur;
     private boolean[] alreadyColored;
@@ -63,36 +64,58 @@ public class dSatur_Algorithm extends GraphColoring {
         alreadyColored[vertex] = true;
     }
 
+    /*
+     * when the Algorithm is invoked more than one time.
+     * This method should checks whether the Algorithm is the first Time
+     */
+    private boolean isGraphReadyColored() {
+        for (int i = 0; i < V; i++) {
+            if (alreadyColored[i])
+                return true;
+        }
+        return false;
+    }
+
+
+    /*
+     * Choose a vertex with maximum DSAT. In case of equality, choose a vertex of maximum degree.
+     * Color this top with the smallest possible color
+     * If all the vertices are colored then stop. Otherwise go in 3.
+     */
     @Override
     public Algorithm executeGraphAlgorithm() {
-        int count = 0;
-        /*
-         * The uncolored vertex that has the largest degree in the degree set 𝐷𝑒𝑔(𝑣𝑖) is selected for coloring.
-         * The selected vertex is colored with first color.
-         */
-        int v0 = graph.vertexHighstAdjDegree(graph.getVertices());
-        colorVertex(v0, 0);
-        // calculate the number adjacent vertices which are colored with different colors for every uncolored vertex.
-        calculateDsatur(v0);
-
-        while (count < V - 1) {
+        if (!isGraphReadyColored()) {
+            int count = 0;
             /*
-             * the uncolored vertex whose number of adjacent vertices colored with different colors is the maximum is selected for coloring.
-             * If more than one vertex provide this condition, the vertex which has the largest degree among them is selected.
+             * The uncolored vertex that has the largest degree in the degree set 𝐷𝑒𝑔(𝑣𝑖) is selected for coloring.
+             * The selected vertex is colored with first color.
              */
-            int[] v = highestDsatur(this.dSatur);
-            int vertex = graph.vertexHighstAdjDegree(v);
-            // Find the appropriate color for this vertex
-            int cr = findRightColor(graph, vertex, resultColors, available);
-            colorVertex(vertex, cr); // Assign the found color
-            calculateDsatur(vertex);
+            int v0 = vertexHighstAdjDegree(graph.getVertices());
+            colorVertex(v0, 0);
+            // calculate the number adjacent vertices which are colored with different colors for every uncolored vertex.
+            calculateDsatur(v0);
 
-            // Reset the values back to true for the next iteration
-            Arrays.fill(available, true);
-            count++;
+            while (count < V - 1) {
+                /*
+                 * the uncolored vertex whose number of adjacent vertices colored with different colors is the maximum is selected for coloring.
+                 * If more than one vertex provide this condition, the vertex which has the largest degree among them is selected.
+                 */
+                int[] v = highestDsatur(this.dSatur);
+                int vertex = vertexHighstAdjDegree(v);
+                // Find the appropriate color for this vertex
+                int cr = findRightColor(graph, vertex, resultColors, available);
+                colorVertex(vertex, cr); // Assign the found color
+                calculateDsatur(vertex);
+
+                // Reset the values back to true for the next iteration
+                Arrays.fill(available, true);
+                count++;
+            }
         }
+
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "DSATUR algorithm");
+
+        return new Algorithm("DSATUR algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

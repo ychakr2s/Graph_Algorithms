@@ -33,9 +33,8 @@ public class Greedy_Algorithm extends GraphColoring {
         for (int vertex = 1; vertex < V; vertex++) {
             /*
              * Process all adjacent vertices and flag their colors as unavailable.
-             * A temporary array to store the available colors. False value of available[cr]
-             * would mean that the color cr is assigned to one of its adjacent vertices.
-             * Initially, all colors are available
+             * A temporary array to store the available colors. False value of available[cr] would mean that the color
+             * cr is assigned to one of its adjacent vertices. Initially, all colors are available.
              */
             boolean[] available = new boolean[V];
             Arrays.fill(available, true);
@@ -48,7 +47,7 @@ public class Greedy_Algorithm extends GraphColoring {
             Arrays.fill(available, true);
         }
         printSolution();
-        return new Algorithm(computeResultsColors(resultColors), resultColors, "Greedy Algorithm");
+        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

@@ -74,33 +74,8 @@ public class Graph {
     /*
      * This method returns the Degree of the intended Vertex
      */
-    private int getVertexDegree(int v) {
+    public int getVertexDegree(int v) {
         return getEdges(v).size();
-    }
-
-    /*
-     * This method returns the Vertex with the highest adjacency degree
-     */
-    public int vertexHighstAdjDegree(int[] ver) {
-        int max = 0;
-        int vertex = 0;
-        int count = 0;
-        if (ver.length > 1) {
-            for (int i = 0; i < ver.length; i++) {
-                if (getVertexDegree(ver[i]) > max) {
-                    max = getVertexDegree(ver[i]);
-                    vertex = ver[i];
-                }
-
-                if (getVertexDegree(ver[i]) == 0 && getVertexDegree(i) == max && count == 0) {
-                    vertex = ver[i];
-                    count++;
-                }
-            }
-        } else {
-            vertex = ver[0];
-        }
-        return vertex;
     }
 
     /*

@@ -1,18 +1,16 @@
 package Main;
 
-import AbstractGraphColoring.Algorithm;
-import AbstractGraphColoring.GraphColoring;
-import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
-import Heuristic_Algorithms.*;
-//import Heuristic_Algorithms.welsh_Powell_Algorithm;
 import com.google.gson.Gson;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
-        Graph g = new Graph(10);
+    public static void main(String[] args) throws IOException {
+        Graph g = new Graph(8);
         g.addEdge(0, 1);
         g.addEdge(0, 6);
         g.addEdge(0, 7);
@@ -27,62 +25,32 @@ public class Main {
         g.addEdge(5, 7);
         g.addEdge(6, 7);
 
-//        ArrayList<GraphColoring> algorithms = new ArrayList<>();
-//        algorithms.add(new Greedy_Algorithm(g));
 
-//        Solution sl = new Solution(g, algorithms);
-//        sl.solve();
-//
-//        algorithms.add("Recursive_Largest_First_Algorithm");
+//         i miss here Factory for Algorithms
+        ArrayList<String> arl = new ArrayList<>();
+        arl.add("Greedy");
+        arl.add("Breadth");
+        arl.add("Depth");
+        arl.add("largest");
+        arl.add("welsh-powel");
+        arl.add("Recursive");
+        arl.add("Linear programming");
+        arl.add("Backtracking");
+        arl.add("dSatur");
 
-        System.out.println();
-//        ArrayList<String> algorithms = new ArrayList<>();
-//
-//        algorithms.add("Recursive_Largest_First_Algorithm");
-//        algorithms.add("Depth_First_Search_Algorithm");
-////        algorithms.add("Linear_Programming");
-//        algorithms.add("dSatur_Algorithm");
-//        algorithms.add("Largest_First_Algorithm");
-//        FactoryAlgorithms fc = new FactoryAlgorithms();
-//        Context imp = new Context(fc.getAlgorithms(algorithms, g));
-
-        // i miss here Factory for Algorithms
-        Greedy_Algorithm gre = new Greedy_Algorithm(g);
-        welsh_Powell_Algorithm wl = new welsh_Powell_Algorithm(g);
-        Largest_First_Algorithm lg = new Largest_First_Algorithm(g);
-        dSatur_Algorithm ds = new dSatur_Algorithm(g);
-        Recursive_Largest_First_Algorithm rlf = new Recursive_Largest_First_Algorithm(g);
-        Depth_First_Search_Algorithm dfs = new Depth_First_Search_Algorithm(g);
-        Breadth_First_Search_Algorithm bfs = new Breadth_First_Search_Algorithm(g);
-        Linear_Programming lp = new Linear_Programming(g);
-
-        ArrayList<Algorithm> alg = new ArrayList<>();
-        ArrayList<GraphColoring> gc = new ArrayList<>();
-        gc.add(gre);
-        gc.add(wl);
-        gc.add(lg);
-        gc.add(ds);
-        Context ct = new Context(gc);
-//        ct.execute();
-        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++");
-
-        alg.add(wl.executeGraphAlgorithm());
-        alg.add(lg.executeGraphAlgorithm());
-        alg.add(ds.executeGraphAlgorithm());
-        alg.add(rlf.executeGraphAlgorithm());
-        alg.add(dfs.executeGraphAlgorithm());
-        alg.add(bfs.executeGraphAlgorithm());
-        alg.add(lp.executeGraphAlgorithm());
-
-//        Algorithm alg = gre.executeGraphAlgorithm();
-
-        Solution sl = new Solution(g, ct.execute());
+        Context ct = new Context(FactoryAlgorithms.getAlgorithms(arl, g));
+        System.out.println("++++++++++++++++++++++++ Context ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
         Gson gs = new Gson();
-        String json = gs.toJson(sl);
+        String json = gs.toJson(ct.execute());
         System.out.println(json);
 
-//        imp.execute();
+        String filename = "D:/ABschlussArbeit/IDE_Project/IntelliJ_Workspace/Graph_Algorithm_Second/src/main/java/Output_Files/fileOut.txt";
+        File file = new File(filename);
+
+        FileWriter writer = new FileWriter(file);
+        writer.write(json);
+        writer.close();
 
     }
 }

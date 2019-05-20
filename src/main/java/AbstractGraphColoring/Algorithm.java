@@ -4,12 +4,14 @@ public class Algorithm {
 
     private String algorithm;
     private int numberColors;
-    private int[] coloredUsed;
+    private int[] usedColors;
+    private int[] coloredNodes;
 
-    public Algorithm(int num, int[] colors, String name) {
-        this.numberColors = num;
-        this.coloredUsed = colors;
+    public Algorithm(String name, int num, int[] colors, int[] coloredNodes) {
         this.algorithm = name;
+        this.numberColors = num;
+        this.usedColors = colors;
+        this.coloredNodes = coloredNodes;
     }
 }
 
