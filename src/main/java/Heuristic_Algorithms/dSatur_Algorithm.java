@@ -69,11 +69,7 @@ public class dSatur_Algorithm extends GraphColoring {
      * This method should checks whether the Algorithm is the first Time
      */
     private boolean isGraphReadyColored() {
-        for (int i = 0; i < V; i++) {
-            if (alreadyColored[i])
-                return true;
-        }
-        return false;
+        return alreadyColored[0];
     }
 
 
