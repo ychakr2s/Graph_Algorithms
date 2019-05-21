@@ -3,27 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f185698-6f38-462c-8cd1-c7f965e58e54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Applications/Solve_Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Applications/Solve_Sudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Applications/SudokuGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Applications/SudokuGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Applications/testSudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Applications/testSudoku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/JsonOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/TestFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Output_Files/fileOut.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Applications/Solve_Sudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Applications/Solve_Sudoku.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Applications/SudokuGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Applications/SudokuGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Applications/testSudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Applications/testSudoku.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Context.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/TestFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/TestFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -158,14 +137,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Input_Files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -286,7 +257,6 @@
       <list>
         <item itemvalue="Application.TestFile" />
         <item itemvalue="Application.testSudoku" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.createReadWrite" />
       </list>
@@ -347,12 +317,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169348000" />
+    <option name="totallyTimeSpent" value="169876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,7 +331,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2898975" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20058565" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34699854" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,6 +355,39 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.38213763" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" />
+      <window_info anchor="right" id="Snyk" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -505,13 +508,7 @@
     <entry file="file://$PROJECT_DIR$/Graph_Algorithm_Implementation.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/fileOut.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-end-column="876" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/fileOut.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -566,13 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/fileOut.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" lean-forward="true" selection-end-column="1014" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/fileOut.json" />
     <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1941">
@@ -679,23 +670,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/sudoku.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/sudoku.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/lines.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
