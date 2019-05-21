@@ -8,18 +8,18 @@ public class Graph {
     // No. of vertices
     private int V;
     // Adjacency List
-    private HashSet[] adj;
     private int[] vertices;
+    private HashSet[] edges;
 
     /*
      * Constructor
      */
     public Graph(int v) {
         this.V = v;
-        this.adj = new HashSet[V];
+        this.edges = new HashSet[V];
 
         for (int i = 0; i < V; ++i)
-            adj[i] = new HashSet<>();
+            edges[i] = new HashSet<>();
 
         this.vertices = new int[V];
         for (int i = 0; i < V; i++) {
@@ -41,7 +41,7 @@ public class Graph {
     }
 
     public HashSet<Integer> getEdges(int v) {
-        return this.adj[v];
+        return this.edges[v];
     }
 
     /*
@@ -51,8 +51,7 @@ public class Graph {
         if (to > getNumVertices() || from > getNumVertices())
             System.out.println("The vertices does not exists");
         else {
-            if (from == to) {
-            } else {
+            if (from != to) {
                 getEdges(from).add(to);
                 getEdges(to).add(from);
             }
@@ -75,36 +74,8 @@ public class Graph {
     /*
      * This method returns the Degree of the intended Vertex
      */
-    private int getVertexDegree(int v) {
+    public int getVertexDegree(int v) {
         return getEdges(v).size();
-    }
-
-    /*
-     * This method returns the Vertex with the highest adjacency degree
-     */
-    public int vertexHighstAdjDegree(int[] ver) {
-        int max = 0;
-        int vertex = 0;
-        int count = 0;
-        if (ver.length > 1) {
-            for (int i = 0; i < ver.length; i++) {
-                if (getVertexDegree(ver[i]) > max) {
-                    max = getVertexDegree(ver[i]);
-                    vertex = ver[i];
-                }
-
-                if (getVertexDegree(ver[i]) == 0 && getVertexDegree(i) == max && count == 0) {
-                    vertex = ver[i];
-                    count++;
-                }
-                if (getVertexDegree(ver[i]) == 0) {
-                    vertex = ver[i];
-                }
-            }
-        } else {
-            vertex = ver[0];
-        }
-        return vertex;
     }
 
     /*
@@ -123,9 +94,5 @@ public class Graph {
             string.append("\n");
         }
         return string.toString();
-    }
-
-    public void print() {
-        System.out.println(toString());
     }
 }

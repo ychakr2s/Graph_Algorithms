@@ -1,5 +1,6 @@
 package Main;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 
 import java.util.ArrayList;
@@ -12,15 +13,17 @@ import java.util.ArrayList;
 class Context {
     private ArrayList<GraphColoring> algorithms;
 
-    protected Context(ArrayList<GraphColoring> algorithms) {
+    Context(ArrayList<GraphColoring> algorithms) {
         this.algorithms = algorithms;
     }
 
-    void execute() {
+    public ArrayList<Algorithm> execute() {
+        ArrayList<Algorithm> alg = new ArrayList<>();
         //delegates behavior to Strategy object
         for (GraphColoring algorithm : algorithms) {
-            algorithm.executeGraphAlgorithm();
+            alg.add(algorithm.executeGraphAlgorithm());
         }
+        return alg;
     }
 
 }

@@ -1,12 +1,16 @@
 package Main;
 
 import Graph.Graph;
+import com.google.gson.Gson;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
-        Graph g = new Graph(12);
+    public static void main(String[] args) throws IOException {
+        Graph g = new Graph(8);
         g.addEdge(0, 1);
         g.addEdge(0, 6);
         g.addEdge(0, 7);
@@ -20,25 +24,32 @@ public class Main {
         g.addEdge(5, 6);
         g.addEdge(5, 7);
         g.addEdge(6, 7);
-//        Linear_Programming lp = new Linear_Programming(g);
-//        lp.executeGraphAlgorithm();
-//        lp.solve();
 
-        ArrayList<String> algorithms = new ArrayList<>();
+//         i miss here Factory for Algorithms
+        ArrayList<String> arl = new ArrayList<>();
+        arl.add("Greedy");
+        arl.add("Breadth");
+        arl.add("Depth");
+        arl.add("largest");
+        arl.add("welsh-powel");
+        arl.add("Recursive");
+        arl.add("Linear programming");
+        arl.add("Backtracking");
+        arl.add("dSatur");
 
-        algorithms.add("Recursive_Largest_First_Algorithm");
-        algorithms.add("Depth_First_Search_Algorithm");
-        algorithms.add("Linear_Programming");
-        algorithms.add("dSatur_Algorithm");
-        algorithms.add("Largest_First_Algorithm");
-        FactoryAlgorithms fc = new FactoryAlgorithms();
-        Context imp = new Context(fc.getAlgorithms(algorithms, g));
+        Context ct = new Context(FactoryAlgorithms.getAlgorithms(arl, g));
+        JsonOutput sl = new JsonOutput(g, ct.execute());
+        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++++++++++++");
 
-//        Gson gs = new Gson();
-//        String json = gs.toJson(g);
-//        System.out.println(json);
+        Gson gs = new Gson();
+        String json = gs.toJson(sl);
+        System.out.println(json);
 
-        imp.execute();
+        String filename = "D:/ABschlussArbeit/IDE_Project/IntelliJ_Workspace/Graph_Algorithm_Second/src/main/java/Output_Files/fileOut.json";
+        File file = new File(filename);
 
+        FileWriter writer = new FileWriter(file);
+        writer.write(json);
+        writer.close();
     }
 }

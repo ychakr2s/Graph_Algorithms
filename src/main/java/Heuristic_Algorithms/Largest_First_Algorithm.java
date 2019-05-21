@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -9,8 +10,6 @@ public class Largest_First_Algorithm extends GraphColoring {
     /*
      * Attributes
      */
-    private Graph graph;
-    private int V;
     private int[] resultColors;
     // This variable represent whether a color available for this Vertex or not
     private boolean[] available;
@@ -19,8 +18,7 @@ public class Largest_First_Algorithm extends GraphColoring {
      * Constructor
      */
     public Largest_First_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
+        super(g);
 
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
@@ -29,20 +27,19 @@ public class Largest_First_Algorithm extends GraphColoring {
         Arrays.fill(available, true);
     }
 
-    // @SuppressWarnings("Duplicates")
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         int count = 1;
         /*
          * Assign the first color to first vertex with highest degree
          */
-        int vertex0 = graph.vertexHighstAdjDegree(graph.getVertices());
+        int vertex0 = vertexHighstAdjDegree(graph.getVertices());
         setColor(vertex0, 0, resultColors);
         // remove the colored Vertex from the Vertices Array
         int[] remainingVertices = remove(graph.getVertices(), vertex0);
 
         while (count < V) {
-            int vertex = graph.vertexHighstAdjDegree(remainingVertices);
+            int vertex = vertexHighstAdjDegree(remainingVertices);
             /*
              * find the suitable color for this vertex
              */
@@ -56,6 +53,7 @@ public class Largest_First_Algorithm extends GraphColoring {
         }
 
         printSolution();
+        return new Algorithm("Largest First Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -8,19 +9,13 @@ import java.util.Arrays;
 
 public class welsh_Powell_Algorithm extends GraphColoring {
 
-    private Graph graph;
-    // No. of vertices
-    private int V;
-    private int[] vertices;
     private int[] resultColors;
 
     /*
      * Constructor
      */
-    public welsh_Powell_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
-        this.vertices = graph.getVertices();
+    public welsh_Powell_Algorithm(Graph graph) {
+        super(graph);
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
     }
@@ -28,10 +23,10 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     /*
      * This Method sorted the the Vertices descending according to the Vertex degree
      */
-    private int[] sortDesc(int[] a) {
+    public int[] sortDesc(int[] a) {
         int[] ret = new int[V];
         for (int i = 0; i < V; i++) {
-            ret[i] = graph.vertexHighstAdjDegree(a);
+            ret[i] = vertexHighstAdjDegree(a);
             a = remove(a, ret[i]);
         }
         return ret;
@@ -62,10 +57,10 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
 
         // List the vertices in order of descending valence i.e.valence degree(v(i)) >= degree(v(i+1)) .
-        int[] verts = sortDesc(vertices);
+        int[] verts = sortDesc(graph.getVertices());
         // Colour the first vertex in the list.
         int color = 0;
         ArrayList<Integer> alreadyColored = new ArrayList<>();
@@ -92,7 +87,9 @@ public class welsh_Powell_Algorithm extends GraphColoring {
              */
             color++;
         }
+
         printSolution();
+        return new Algorithm("Welsh-Powell Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override

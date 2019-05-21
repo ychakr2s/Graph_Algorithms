@@ -1,31 +1,28 @@
 package Exact_Algorithm;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
 import java.util.Arrays;
 
 public class Backtracking extends GraphColoring {
-    private Graph graph;
-    private int V;
     private int m;
-    private int[] resultColor;
+    private int[] resultColors;
 
     public Backtracking(Graph g, int m) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
+        super(g);
         this.m = m;
-        this.resultColor = new int[V];
-        Arrays.fill(resultColor, -1);
+        this.resultColors = new int[V];
+        Arrays.fill(resultColors, -1);
     }
 
     /*
-     * A utility function to check if the current color assignment is safe for
-     * vertex v
+     * A utility function to check if the current color assignment is safe for vertex v
      */
     private boolean isSafe(int v, int c) {
         for (int edge : graph.getEdges(v)) {
-            if (getColor(edge, resultColor) == c)
+            if (getColor(edge, resultColors) == c)
                 return false;
         }
         return true;
@@ -49,12 +46,13 @@ public class Backtracking extends GraphColoring {
              * Check if assignment of color c to v is fine
              */
             if (isSafe(v, c)) {
-                setColor(v, c, resultColor);
+                setColor(v, c, resultColors);
                 /*
                  * recur to assign colors to rest of the vertices
                  */
                 if (graphColoringUtil(v + 1))
                     return true;
+                setColor(v, -1, resultColors);
             }
         }
 
@@ -65,27 +63,29 @@ public class Backtracking extends GraphColoring {
     }
 
     /*
-     * This function solves the m Coloring problem using Backtracking. It mainly
-     * uses graphColoringUtil() to solve the problem. It returns false if the m
-     * colors cannot be assigned, otherwise return true and prints the Solution.
+     * This function solves the m Coloring problem using Backtracking.
+     * It mainly uses graphColoringUtil() to solve the problem.
+     * It returns false if the m colors cannot be assigned, otherwise return true and prints the JsonOutput.
      */
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         if (graphColoringUtil(0)) {
             printSolution();
         } else
-            System.out.println("the Solution does not exists");
+            System.out.println("the JsonOutput does not exists");
+
+        return new Algorithm("Backtracking", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override
     public void description() {
         System.out.println("This is the implementation of the Backtracking algorithm \n" +
-                "The Solution exists: +++++++++++++");
+                "The JsonOutput exists: +++++++++++++");
     }
 
     @Override
     public void printSolution() {
         description();
-        printTest(resultColor, graph);
+        printTest(resultColors, graph);
     }
 }

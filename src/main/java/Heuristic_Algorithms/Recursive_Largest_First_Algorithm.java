@@ -1,5 +1,6 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
@@ -8,25 +9,19 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class Recursive_Largest_First_Algorithm extends GraphColoring {
-    // No. of vertices
-    private Graph graph;
-    private int V;
-    private int[] vertices;
+
     private int[] resultColors;
 
     // which contains uncoloured vertices that can currently be colored
     private int[] X;
     private int[] Y;
-
     // This variable represent whether a color available for this Vertex or not
     private boolean[] isColored;
 
     public Recursive_Largest_First_Algorithm(Graph g) {
-        this.graph = g;
-        this.V = graph.getNumVertices();
+        super(g);
         this.X = new int[0];
         this.Y = new int[0];
-        this.vertices = graph.getVertices();
 
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
@@ -89,14 +84,14 @@ public class Recursive_Largest_First_Algorithm extends GraphColoring {
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         // now i will produce Color for the uncolored Vertices
 
-        X = vertices;
+        X = graph.getVertices();
         int si = 0;
         while (V > 0) {
             while (X.length >= 1) {
-                int vertex = graph.vertexHighstAdjDegree(X);
+                int vertex = vertexHighstAdjDegree(X);
 
                 // assign a color to the Vertex x
                 colorVertex(vertex, si);
@@ -127,12 +122,12 @@ public class Recursive_Largest_First_Algorithm extends GraphColoring {
             si++;
         }
         printSolution();
+        return new Algorithm("RECURSIVE LARGEST FIRST", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override
     public void description() {
         System.out.println("This is the implementation of the RECURSIVE LARGEST FIRST ALGORITHM");
-
     }
 
     @Override

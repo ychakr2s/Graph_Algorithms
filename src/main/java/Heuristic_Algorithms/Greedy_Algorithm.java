@@ -1,36 +1,31 @@
 package Heuristic_Algorithms;
 
+import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
 import Graph.Graph;
 
 import java.util.Arrays;
 
 public class Greedy_Algorithm extends GraphColoring {
-    private Graph graph;
-    private int V;
+    //    private Graph graph;
+    //    private int V;
     private int[] resultColors;
-    private boolean[] available;
 
     /*
      * Constructor
      */
     public Greedy_Algorithm(Graph graph) {
-        this.graph = graph;
-        this.V = graph.getNumVertices();
+        super(graph);
+//        this.graph = graph;
+//        this.V = ;
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
 
-        /*
-         * A temporary array to store the available colors. False value of available[cr]
-         * would mean that the color cr is assigned to one of its adjacent vertices.
-         * Initially, all colors are available
-         */
-        this.available = new boolean[V];
-        Arrays.fill(available, true);
+
     }
 
     @Override
-    public void executeGraphAlgorithm() {
+    public Algorithm executeGraphAlgorithm() {
         // Assign the first color to first vertex
         setColor(0, 0, resultColors);
 
@@ -38,7 +33,13 @@ public class Greedy_Algorithm extends GraphColoring {
         for (int vertex = 1; vertex < V; vertex++) {
             /*
              * Process all adjacent vertices and flag their colors as unavailable.
+             * A temporary array to store the available colors. False value of available[cr] would mean that the color
+             * cr is assigned to one of its adjacent vertices. Initially, all colors are available.
              */
+            boolean[] available = new boolean[V];
+            Arrays.fill(available, true);
+
+
             int cr = findRightColor(graph, vertex, resultColors, available);
             setColor(vertex, cr, resultColors); // Assign the found color
 
@@ -46,6 +47,7 @@ public class Greedy_Algorithm extends GraphColoring {
             Arrays.fill(available, true);
         }
         printSolution();
+        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
 
     @Override
