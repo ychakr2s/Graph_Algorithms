@@ -19,9 +19,7 @@ public class Solve_Sudoku extends SudokuGraph {
      */
     private boolean isSafe(int v, int c) {
 
-        Iterator<Integer> it = getEdges(v).iterator();
-        while (it.hasNext()) {
-            int vertex = it.next();
+        for (int vertex : getEdges(v)) {
             if (getColor(vertex) == c)
                 return false;
         }
@@ -82,6 +80,7 @@ public class Solve_Sudoku extends SudokuGraph {
     }
 
     public String executeGraphAlgorithm() {
+
         if (graphColoringUtil(0)) {
             System.out.println("JsonOutput exist");
             return toString();
@@ -96,9 +95,8 @@ public class Solve_Sudoku extends SudokuGraph {
         StringBuilder string = new StringBuilder();
         string.append("This is the JsonOutput of the Sudoku Problem using Graph Coloring: \n");
 
-        int i = 0;
         int j = 0;
-        for (; i <= V - 9; i = i + 9) {
+        for (int i = 0; i <= V - 9; i = i + 9) {
             for (; j < i + 9; j++) {
                 string.append(getColor(j)).append(" ");
             }

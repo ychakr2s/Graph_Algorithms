@@ -1,7 +1,5 @@
 package Applications;
 
-import com.google.gson.Gson;
-
 import java.io.*;
 
 public class testSudoku {

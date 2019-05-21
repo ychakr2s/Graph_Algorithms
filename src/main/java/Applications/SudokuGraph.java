@@ -13,18 +13,18 @@ public class SudokuGraph extends Graph {
     }
 
     private void constructSudoku() {
-        int j = 0;
-        int j2 = 0;
+
         int col = 3;
-        int square = 0;
         int temp = 19;
         int countSquare = 1;
         HashSet[] tmp = new HashSet[81];
+
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = new HashSet();
         }
 
-        for (; square < 81; square = square + 3) {
+        // bind each node to another nodes in the same Block.
+        for (int square = 0; square < 81; square = square + 3) {
             if (square / 9 == countSquare) {
                 countSquare = countSquare + 3;
                 square = square + 18;
@@ -36,8 +36,8 @@ public class SudokuGraph extends Graph {
                 break;
             }
 
-            for (j = square; j < col; j++) {
-                for (j2 = j; j2 < temp; j2 = j2 + 9) {
+            for (int j = square; j < col; j++) {
+                for (int j2 = j; j2 < temp; j2 = j2 + 9) {
                     tmp[j].add(j2);
                 }
                 temp++;
@@ -61,6 +61,7 @@ public class SudokuGraph extends Graph {
             }
         }
 
+        // bind each node to another nodes in the same row, column.
         for (int v = 0; v < getNumVertices(); v++) {
 
             int row = Math.abs(v - v % 9);

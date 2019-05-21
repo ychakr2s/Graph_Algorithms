@@ -35,7 +35,7 @@ public class TestFile {
 //                out.write(splited[0] + " "+splited[1] + System.getProperty("line.separator"));
                 if (splited[0].equals("e")) {
                     gr.addEdge(Integer.parseInt(splited[1]), Integer.parseInt(splited[2]));
-                    a = Integer.parseInt(splited[1]) + Integer.parseInt(splited[2]);
+//                    a = Integer.parseInt(splited[1]) + Integer.parseInt(splited[2]);
 //                    data = String.valueOf(a);
                     out.write(data + System.getProperty("line.separator"));
                 }
