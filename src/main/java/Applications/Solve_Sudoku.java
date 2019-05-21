@@ -11,7 +11,6 @@ public class Solve_Sudoku extends SudokuGraph {
     Solve_Sudoku() {
         this.V = getNumVertices();
         this.resultColors = new int[V];
-
         this.fixedColor = new boolean[V];
     }
 
@@ -62,7 +61,6 @@ public class Solve_Sudoku extends SudokuGraph {
                 // if next vertex was not colorable. reset the color and try next one
                 setColor(v, -1);
             }
-
         }
 
         /*
@@ -83,15 +81,12 @@ public class Solve_Sudoku extends SudokuGraph {
         return this.resultColors[vertex];
     }
 
-
-    //    @Override
     public String executeGraphAlgorithm() {
         if (graphColoringUtil(0)) {
-            System.out.println("Solution exist");
+            System.out.println("JsonOutput exist");
             return toString();
-
         } else {
-            System.out.println("the Solution does not exists");
+            System.out.println("the JsonOutput does not exists");
             return "There is an Input Error";
         }
 
@@ -99,15 +94,12 @@ public class Solve_Sudoku extends SudokuGraph {
 
     public String toString() {
         StringBuilder string = new StringBuilder();
-        string.append("This is the Solution of the Sudoku Problem using Graph Coloring: \n");
-        string.append("\n");
+        string.append("This is the JsonOutput of the Sudoku Problem using Graph Coloring: \n");
 
         int i = 0;
         int j = 0;
         for (; i <= V - 9; i = i + 9) {
-
             for (; j < i + 9; j++) {
-
                 string.append(getColor(j)).append(" ");
             }
             string.append("\n");
@@ -115,14 +107,4 @@ public class Solve_Sudoku extends SudokuGraph {
         return string.toString();
     }
 
-//    public void printSudoku() {
-//        int i = 0;
-//        int j = 0;
-//        for (; i <= V - 9; i = i + 9) {
-//            for (; j < i + 9; j++) {
-//                System.out.print("   " + getColor(j));
-//            }
-//            System.out.println();
-//        }
-//    }
 }

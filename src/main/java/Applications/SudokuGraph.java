@@ -7,26 +7,24 @@ import java.util.Iterator;
 
 public class SudokuGraph extends Graph {
 
-    public SudokuGraph() {
+    SudokuGraph() {
         super(81);
         constructSudoku();
     }
 
-    public void constructSudoku() {
-
+    private void constructSudoku() {
         int j = 0;
         int j2 = 0;
         int col = 3;
         int square = 0;
         int temp = 19;
         int countSquare = 1;
-        HashSet<Integer> tmp[] = new HashSet[81];
+        HashSet[] tmp = new HashSet[81];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = new HashSet();
         }
 
         for (; square < 81; square = square + 3) {
-
             if (square / 9 == countSquare) {
                 countSquare = countSquare + 3;
                 square = square + 18;
@@ -76,19 +74,4 @@ public class SudokuGraph extends Graph {
             }
         }
     }
-
-
-//    public boolean[] getFixed() {
-//        return this.fixedColor;
-//    }
-
-//    public void setFixedColor(int v) {
-//        this.fixedColor[v] = true;
-//    }
-
-//    public boolean getFixedColor(int v) {
-//        return this.fixedColor[v];
-//    }
-
-
 }

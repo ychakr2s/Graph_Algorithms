@@ -65,14 +65,14 @@ public class Backtracking extends GraphColoring {
     /*
      * This function solves the m Coloring problem using Backtracking.
      * It mainly uses graphColoringUtil() to solve the problem.
-     * It returns false if the m colors cannot be assigned, otherwise return true and prints the Solution.
+     * It returns false if the m colors cannot be assigned, otherwise return true and prints the JsonOutput.
      */
     @Override
     public Algorithm executeGraphAlgorithm() {
         if (graphColoringUtil(0)) {
             printSolution();
         } else
-            System.out.println("the Solution does not exists");
+            System.out.println("the JsonOutput does not exists");
 
         return new Algorithm("Backtracking", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
     }
@@ -80,7 +80,7 @@ public class Backtracking extends GraphColoring {
     @Override
     public void description() {
         System.out.println("This is the implementation of the Backtracking algorithm \n" +
-                "The Solution exists: +++++++++++++");
+                "The JsonOutput exists: +++++++++++++");
     }
 
     @Override

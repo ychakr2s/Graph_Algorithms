@@ -1,7 +1,6 @@
 package Main;
 
 import Graph.Graph;
-import Heuristic_Algorithms.dSatur_Algorithm;
 import com.google.gson.Gson;
 
 import java.io.File;
@@ -26,7 +25,6 @@ public class Main {
         g.addEdge(5, 7);
         g.addEdge(6, 7);
 
-
 //         i miss here Factory for Algorithms
         ArrayList<String> arl = new ArrayList<>();
         arl.add("Greedy");
@@ -40,10 +38,11 @@ public class Main {
         arl.add("dSatur");
 
         Context ct = new Context(FactoryAlgorithms.getAlgorithms(arl, g));
-        System.out.println("++++++++++++++++++++++++ Context ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        JsonOutput sl = new JsonOutput(g, ct.execute());
+        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++++++++++++");
 
         Gson gs = new Gson();
-        String json = gs.toJson(ct.execute());
+        String json = gs.toJson(sl);
         System.out.println(json);
 
         String filename = "D:/ABschlussArbeit/IDE_Project/IntelliJ_Workspace/Graph_Algorithm_Second/src/main/java/Output_Files/fileOut.json";
@@ -52,9 +51,5 @@ public class Main {
         FileWriter writer = new FileWriter(file);
         writer.write(json);
         writer.close();
-
-
-
-
     }
 }

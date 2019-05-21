@@ -56,7 +56,6 @@ public abstract class GraphColoring {
             return vertex;
         } else
             return -1;
-
     }
 
     // remove an element from Array
