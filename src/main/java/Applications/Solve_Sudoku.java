@@ -8,7 +8,7 @@ public class Solve_Sudoku extends SudokuGraph {
     private int[] resultColors;
     private boolean[] fixedColor;
 
-    Solve_Sudoku() {
+    public Solve_Sudoku() {
         this.V = getNumVertices();
         this.resultColors = new int[V];
         this.fixedColor = new boolean[V];
@@ -67,7 +67,7 @@ public class Solve_Sudoku extends SudokuGraph {
         return false;
     }
 
-    void setFixedColor(int v) {
+    public void setFixedColor(int v) {
         this.fixedColor[v] = true;
     }
 

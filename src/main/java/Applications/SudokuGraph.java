@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class SudokuGraph extends Graph {
 
-    SudokuGraph() {
+    public SudokuGraph() {
         super(81);
         constructSudoku();
     }
@@ -61,7 +61,7 @@ public class SudokuGraph extends Graph {
             }
         }
 
-        // bind each node to another nodes in the same row, column.
+        // bind each node to another nodes in the same row and column.
         for (int v = 0; v < getNumVertices(); v++) {
 
             int row = Math.abs(v - v % 9);
