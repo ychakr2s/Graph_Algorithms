@@ -1,36 +1,29 @@
 package Main;
 
-import AbstractGraphColoring.GraphColoring;
-import Exact_Algorithm.Backtracking;
-import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
-import Heuristic_Algorithms.*;
 import ReadFile.readFile;
+import com.google.gson.Gson;
 
 import java.io.*;
-//import java.nio.file.Path;
-//import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class TestFile {
     public static void main(String[] args) throws IOException {
-        String filename = "D:\\ABschlussArbeit\\IDE_Project\\IntelliJ_Workspace\\Graph_Algorithm_Second\\src\\main\\java\\Input_Files\\graph.txt";
+        String filename = "D:\\ABschlussArbeit\\IDE_Project\\IntelliJ_Workspace\\Graph_Algorithm_Second\\src\\main\\java\\Input_Files\\hamming6-4.clq";
 
         readFile rd = new readFile();
         Graph gr = rd.readGraph(filename);
-        ArrayList<GraphColoring> algorithms = new ArrayList<>();
+        ArrayList<String> algstr = new ArrayList<>();
+        algstr.add("Greedy");
+        algstr.add("dSatur");
+        algstr.add("Largest");
+        algstr.add("Recursive");
 
 
-//            algorithms.add(new Recursive_Largest_First_Algorithm(gr));
-//            algorithms.add(new Depth_First_Search_Algorithm(gr));
-        algorithms.add(new Breadth_First_Search_Algorithm(gr));
-        algorithms.add(new Largest_First_Algorithm(gr));
-        algorithms.add(new Backtracking(gr, 58));
-        algorithms.add(new Depth_First_Search_Algorithm(gr));
-//        algorithms.add(new Linear_Programming(gr));
+        Context imp = new Context(FactoryAlgorithms.getAlgorithms(algstr, gr));
+        JsonOutput jso = new JsonOutput(gr, imp.execute());
+        Gson gs = new Gson();
+        System.out.println(gs.toJson(jso));
 
-        Context imp = new Context(algorithms);
-
-        imp.execute();
     }
 }

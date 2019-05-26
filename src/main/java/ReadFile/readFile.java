@@ -1,20 +1,20 @@
 package ReadFile;
 
 import Applications.Solve_Sudoku;
-import Applications.SudokuGraph;
 import Graph.Graph;
 
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static java.lang.System.out;
-
 public class readFile {
 
     public readFile() {
     }
 
+    /*
+     * This method read a File and produce a Graph.
+     */
     public Graph readGraph(String filename) {
 
         Path path = Paths.get(filename);
@@ -26,12 +26,12 @@ public class readFile {
             while (line != null) {
                 String[] splited = line.split("\\s+");
                 if (splited[0].equals("p")) {
-                    gr = new Graph(Integer.parseInt(splited[2]) + 1);
+                    gr = new Graph(Integer.parseInt(splited[2]));
                 }
 
                 if (splited[0].equals("e")) {
                     assert gr != null;
-                    gr.addEdge(Integer.parseInt(splited[1]), Integer.parseInt(splited[2]));
+                    gr.addEdge(Integer.parseInt(splited[1]) - 1, Integer.parseInt(splited[2]) - 1);
                 }
 
                 line = reader.readLine();
@@ -44,6 +44,9 @@ public class readFile {
         return gr;
     }
 
+    /*
+     * This method read a Sudoku File and produce from him a Sudoku File.
+     */
     public Solve_Sudoku readGraphSudoku(String filename) {
 
         Path path = Paths.get(filename);
