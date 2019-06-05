@@ -14,16 +14,26 @@ public class TestFile {
         readFile rd = new readFile();
         Graph gr = rd.readGraph(filename);
         ArrayList<String> algstr = new ArrayList<>();
-        algstr.add("Greedy");
-        algstr.add("dSatur");
-        algstr.add("Largest");
-        algstr.add("Recursive");
-
-
+        algstr.add("Breadth");
+//        algstr.add("Depth");
+//
+//        algstr.add("dSatur");
+//        algstr.add("Largest");
+//        algstr.add("Recursive");
+        int count =0;
         Context imp = new Context(FactoryAlgorithms.getAlgorithms(algstr, gr));
-        JsonOutput jso = new JsonOutput(gr, imp.execute());
-        Gson gs = new Gson();
-        System.out.println(gs.toJson(jso));
+
+
+        while(count<18) {
+
+            imp.execute();
+            count++;
+        }
+//        JsonOutput jso = new JsonOutput(gr, imp.execute());
+//        Gson gs = new Gson();
+//        String json = gs.toJson(jso);
+//
+//        System.out.println(json);
 
     }
 }

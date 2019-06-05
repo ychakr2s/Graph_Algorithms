@@ -20,7 +20,8 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
         super(g);
 
         // Mark all the vertices as not visited(By default set as false)
-        this.visited = new boolean[V];
+//        this.visited = new boolean[V];
+
 
         this.resultColors = new int[V];
         Arrays.fill(resultColors, -1);
@@ -76,6 +77,8 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        this.visited = new boolean[V];
+
         Random rn = new Random();
         int chooseStart = rn.nextInt(V);
         utilBFS(chooseStart);
