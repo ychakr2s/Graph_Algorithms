@@ -2,10 +2,12 @@ package ReadFile;
 
 import Applications.Solve_Sudoku;
 import Graph.Graph;
+import com.google.gson.Gson;
 
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Iterator;
 
 public class readFile {
 
@@ -37,6 +39,39 @@ public class readFile {
                 line = reader.readLine();
             }
             reader.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return gr;
+    }
+
+    /*
+     * this method get a Json file and parse it to Java. It is parsed to Graph.
+     */
+    public Graph jsonToGraph(String filename) {
+
+        Gson gson = new Gson();
+        Graph gr = new Graph(0);
+
+        try {
+            BufferedReader br = new BufferedReader(
+                    new FileReader(filename));
+
+            //convert the json string back to object
+            Graph graph = gson.fromJson(br, Graph.class);
+
+            gr = new Graph(graph.getNumVertices());
+
+            for (int i = 0; i < graph.getNumVertices(); i++) {
+                Iterator itr = graph.getEdges(i).iterator();
+                while (itr.hasNext()) {
+
+                    double a = (double) itr.next();
+                    int c = (int) a;
+                    gr.addEdge(i, c);
+                }
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

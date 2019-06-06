@@ -9,7 +9,7 @@ public class JsonOutput {
     private Graph Graph;
     private ArrayList<Algorithm> algorithms;
 
-    JsonOutput(Graph gr, ArrayList<Algorithm> algorithms) {
+    public JsonOutput(Graph gr, ArrayList<Algorithm> algorithms) {
         this.Graph = gr;
         this.algorithms = algorithms;
     }
