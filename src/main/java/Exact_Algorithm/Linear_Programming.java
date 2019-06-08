@@ -90,7 +90,7 @@ public class Linear_Programming extends GraphColoring {
                 for (int j = 0; j < V; j++) {
                     for (int j2 = 0; j2 < V; j2++) {
                         IloLinearNumExpr constraint = model.linearNumExpr();
-                        if (graph.isEdges(i, j2)) {
+                        if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
                             constraint.addTerm(1.0, x[i][j]);
                             constraint.addTerm(1.0, x[j2][j]);
                             model.add(model.addLe(constraint, 1));
