@@ -32,7 +32,6 @@ public class kleinTest {
         algstr.add("Linear_Programming");
         algstr.add("Backtracking");
 
-
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile, true));
 

@@ -1,5 +1,8 @@
 package Main;
 
+//import Exact_Algorithm.LP_Test;
+import Exact_Algorithm.LP_Test;
+import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import com.google.gson.Gson;
 
@@ -29,27 +32,34 @@ public class Main {
         ArrayList<String> arl = new ArrayList<>();
         arl.add("Greedy");
         arl.add("Breadth");
-        arl.add("Depth");
-        arl.add("largest");
-        arl.add("welsh-powel");
-        arl.add("Recursive");
-        arl.add("Linear programming");
-        arl.add("Backtracking");
-        arl.add("dSatur");
+//        arl.add("Depth");
+//        arl.add("largest");
+//        arl.add("welsh-powel");
+//        arl.add("Recursive");
+//        arl.add("Linear programming");
+//        arl.add("Backtracking");
+//        arl.add("dSatur");
 
         Context ct = new Context(FactoryAlgorithms.getAlgorithms(arl, g));
-        JsonOutput sl = new JsonOutput(g, ct.execute());
-        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++++++++++++");
+        ct.execute();
+        Linear_Programming lp = new Linear_Programming(g);
+        lp.executeGraphAlgorithm();
 
-        Gson gs = new Gson();
-        String json = gs.toJson(sl);
-        System.out.println(json);
+        LP_Test lt = new LP_Test(g);
+        lt.executeGraphAlgorithm();
 
-        String filename = "D:/ABschlussArbeit/IDE_Project/IntelliJ_Workspace/Graph_Algorithm_Second/src/main/java/Output_Files/fileOut.json";
-        File file = new File(filename);
-
-        FileWriter writer = new FileWriter(file);
-        writer.write(json);
-        writer.close();
+//        JsonOutput sl = new JsonOutput(g, ct.execute());
+//        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++++++++++++");
+//
+//        Gson gs = new Gson();
+//        String json = gs.toJson(sl);
+//        System.out.println(json);
+//
+//        String filename = "D:/ABschlussArbeit/IDE_Project/IntelliJ_Workspace/Graph_Algorithm_Second/src/main/java/Output_Files/fileOut.json";
+//        File file = new File(filename);
+//
+//        FileWriter writer = new FileWriter(file);
+//        writer.write(json);
+//        writer.close();
     }
 }

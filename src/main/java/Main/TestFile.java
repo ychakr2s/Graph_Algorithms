@@ -1,5 +1,7 @@
 package Main;
 
+import Exact_Algorithm.LP_Test;
+import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import ReadFile.readFile;
 import com.google.gson.Gson;
@@ -17,16 +19,19 @@ public class TestFile {
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         readFile rd = new readFile();
         Graph gr = rd.readGraph(filename);
-
+        LP_Test lp = new LP_Test(gr);
+        lp.executeGraphAlgorithm();
+        Linear_Programming lpp = new Linear_Programming(gr);
+        lpp.executeGraphAlgorithm();
         ArrayList<String> algstr = new ArrayList<>();
 //        algstr.add("Breadth");
-//        algstr.add("Depth");
+        algstr.add("Depth");
         algstr.add("Greedy");
-//        algstr.add("welsh");
-//        algstr.add("dSatur");
-        algstr.add("Largest");
-//        algstr.add("Recursive");
-        algstr.add("Linear_Programming");
+        algstr.add("welsh");
+////        algstr.add("dSatur");
+//        algstr.add("Largest");
+////        algstr.add("Recursive");
+//        algstr.add("Linear_Programming");
 //        algstr.add("Backtracking");
 //
 //

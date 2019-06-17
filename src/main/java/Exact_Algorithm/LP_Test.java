@@ -9,18 +9,21 @@ import ilog.cplex.IloCplex;
 
 import java.util.ArrayList;
 
-public class Linear_Programming extends GraphColoring {
-
+public class LP_Test extends GraphColoring {
     private int[] resultColors;
 
-    public Linear_Programming(Graph g) {
+    public LP_Test(Graph g) {
         super(g);
         this.resultColors = new int[V];
     }
 
+//    @Override
+//    public Algorithm executeGraphAlgorithm() {
+//        return null;
+//    }
+
     @Override
     public Algorithm executeGraphAlgorithm() {
-
         try {
             // Instantiate an empty model
             IloCplex model = new IloCplex();
@@ -61,36 +64,11 @@ public class Linear_Programming extends GraphColoring {
              * +++++++++++++++++ Define the constraints ++++++++++++++++++++
              * first Constraint: Sum(Xi,k) = 1. Equation ensures that each vertex receives exactly one color.
              */
-            for (int i = 0; i < V; i++) { // for each variable
-                IloLinearNumExpr constraint = model.linearNumExpr();
-                for (int j = 0; j < V; j++) {
-                    constraint.addTerm(1, x[i][j]);
-                }
-                model.add(model.addEq(constraint, 1));
-            }
-
-            /*
-             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of variables,
-             * one Vertex can only be colored with color j if Yj = 1.
-             */
-            for (int i = 0; i < V; i++) {
-                for (int j = 0; j < V; j++) {
-                    IloLinearNumExpr constraint = model.linearNumExpr();
-                    constraint.addTerm(1.0, x[i][j]);
-                    constraint.addTerm(-1.0, Y[j]);
-                    model.add(model.addLe(constraint, 1));
-                }
-            }
-
-            /*
-             * Third Constraint:  Xic + Xjc <= Y[j]. This restrictions ensures that at most one of the two variables will be true,
-             * effectively avoiding color conflicts.
-             */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
                     for (int j2 = 0; j2 < V; j2++) {
                         IloLinearNumExpr constraint = model.linearNumExpr();
-                        if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
+                        if (graph.isEdges(i, j2)) {
                             constraint.addTerm(1.0, x[i][j]);
                             constraint.addTerm(1.0, x[j2][j]);
                             model.add(model.addLe(constraint, Y[j]));
@@ -98,26 +76,87 @@ public class Linear_Programming extends GraphColoring {
                     }
                 }
             }
+            // second
+            for (int i = 0; i < V; i++) { // for each variable
+                IloLinearNumExpr constraint = model.linearNumExpr();
+                for (int j = 0; j < V; j++) {
+                    constraint.addTerm(1, x[i][j]);
+                }
+                model.add(model.addEq(constraint, 1));
+            }
+            // third Yj ≥Yj+1
+            for (int i = 0; i < V - 1; i++) { // for each variable
+                IloLinearNumExpr constraint = model.linearNumExpr();
+                constraint.addTerm(1.0, Y[i]);
+
+                model.add(model.addGe(constraint, Y[i + 1]));
+            }
+
+            // fourth:
+            for (int i = 0; i < V; i++) { // for each variable
+                IloLinearNumExpr constraint = model.linearNumExpr();
+                for (int j = 0; j < V; j++) {
+                    constraint.addTerm(1, x[j][i]);
+                }
+                if (i < V - 1) {
+                    for (int j = 0; j < V; j++) {
+                        constraint.addTerm(-1, x[j][i + 1]);
+                    }
+                }
+
+                model.add(model.addGe(constraint, 0));
+            }
+
+
+            /*
+             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of variables,
+             * one Vertex can only be colored with color j if Yj = 1.
+             */
+//            for (int i = 0; i < V; i++) {
+//                for (int j = 0; j < V; j++) {
+//                    IloLinearNumExpr constraint = model.linearNumExpr();
+//                    constraint.addTerm(1.0, x[i][j]);
+//                    constraint.addTerm(-1.0, Y[j]);
+//                    model.add(model.addLe(constraint, 1));
+//                }
+//            }
+
+            /*
+             * Third Constraint:  Xic + Xjc <= 1. This restrictions ensures that at most one of the two variables will be true,
+             * effectively avoiding color conflicts.
+             */
+//            for (int i = 0; i < V; i++) {
+//                for (int j = 0; j < V; j++) {
+//                    for (int j2 = 0; j2 < V; j2++) {
+//                        IloLinearNumExpr constraint = model.linearNumExpr();
+//                        if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
+//                            constraint.addTerm(1.0, x[i][j]);
+//                            constraint.addTerm(1.0, x[j2][j]);
+//                            model.add(model.addLe(constraint, 1));
+//                        }
+//                    }
+//                }
+//            }
 
             /*
              * Fourth Constraint: 0<= Xi,j , Yk <= 1 for all j,j=1,...,n
              */
-            for (int i = 0; i < V; i++) {
-                for (int j = 0; j < V; j++) {
-                    IloLinearNumExpr constraint = model.linearNumExpr();
-                    constraint.addTerm(1.0, x[i][j]);
-                    model.add(model.addLe(constraint, 1));
-                    model.add(model.addGe(constraint, 0));
-                }
-            }
-            for (int i = 0; i < V; i++) {
-                for (int j = 0; j < V; j++) {
-                    IloLinearNumExpr constraint = model.linearNumExpr();
-                    constraint.addTerm(1.0, Y[i]);
-                    model.add(model.addLe(constraint, 1));
-                    model.add(model.addGe(constraint, 0));
-                }
-            }
+//            for (int i = 0; i < V; i++) {
+//                for (int j = 0; j < V; j++) {
+//                    IloLinearNumExpr constraint = model.linearNumExpr();
+//                    constraint.addTerm(1.0, x[i][j]);
+//                    model.add(model.addLe(constraint, 1));
+//                    model.add(model.addGe(constraint, 0));
+//                }
+//            }
+//            for (int i = 0; i < V; i++) {
+//                for (int j = 0; j < V; j++) {
+//                    IloLinearNumExpr constraint = model.linearNumExpr();
+//                    constraint.addTerm(1.0, Y[i]);
+//                    model.add(model.addLe(constraint, 1));
+//                    model.add(model.addGe(constraint, 0));
+//                }
+//            }
 
             /*
              * fifth Constraint: Y[i] -Y[i+1]>=0. This ensures that any k-coloured solution only uses the colours
@@ -166,7 +205,7 @@ public class Linear_Programming extends GraphColoring {
 
     @Override
     public void description() {
-        System.out.println("This is the implementation of the Linear Programming Algorithm ");
+
     }
 
     @Override
