@@ -20,16 +20,24 @@ public class Linear_Programming extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
+        double end = 0;
 
+        IloCplex model = null;
         try {
             // Instantiate an empty model
-            IloCplex model = new IloCplex();
+            model = new IloCplex();
 
+            if (V > 100 || graph.getEdge() > 1000) {
+                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
+                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
+            } else {
+                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
+            }
             // Define an array of decision variables
             IloIntVar[][] x = new IloIntVar[V][V];
 
             for (int i = 0; i < V; i++) {
-
                 // Define each variable's range from 0 to 1
                 for (int j = 0; j < V; j++) {
                     x[i][j] = model.intVar(0, 1);
@@ -54,15 +62,17 @@ public class Linear_Programming extends GraphColoring {
                 obj.addTerm(1, Y[i]);
             }
 
+
             // Define a minimization problem
             model.addMinimize(obj);
 
             /*
-             * +++++++++++++++++ Define the constraints ++++++++++++++++++++
+             * +++++++++++++++++++++++++++++++++ Define the constraints ++++++++++++++++++++++++++++++++++++
              * first Constraint: Sum(Xi,k) = 1. Equation ensures that each vertex receives exactly one color.
              */
             for (int i = 0; i < V; i++) { // for each variable
                 IloLinearNumExpr constraint = model.linearNumExpr();
+
                 for (int j = 0; j < V; j++) {
                     constraint.addTerm(1, x[i][j]);
                 }
@@ -88,6 +98,7 @@ public class Linear_Programming extends GraphColoring {
              */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
+
                     for (int j2 = 0; j2 < V; j2++) {
                         IloLinearNumExpr constraint = model.linearNumExpr();
                         if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
@@ -106,6 +117,7 @@ public class Linear_Programming extends GraphColoring {
                 for (int j = 0; j < V; j++) {
                     IloLinearNumExpr constraint = model.linearNumExpr();
                     constraint.addTerm(1.0, x[i][j]);
+
                     model.add(model.addLe(constraint, 1));
                     model.add(model.addGe(constraint, 0));
                 }
@@ -140,6 +152,7 @@ public class Linear_Programming extends GraphColoring {
                 // Print out the objective function
                 System.out.println("obj_val = " + model.getObjValue());
 
+
                 // Fill ArrayList Colors with the used Colors
                 ArrayList<Integer> colors = new ArrayList<>();
                 for (int i = 0; i < V; i++) { // for each variable
@@ -161,7 +174,9 @@ public class Linear_Programming extends GraphColoring {
         }
 
         printSolution();
-        return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        end = (System.currentTimeMillis() - start);
+
+        return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

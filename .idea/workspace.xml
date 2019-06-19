@@ -3,16 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="b01411c0-f68b-4b1f-acc4-5631dba61956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Context.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/TestFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadFile/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadFile/readFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AbstractGraphColoring/GraphColoring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Backtracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/LP_Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Linear_Programming.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/Linear_Programming.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/kleinTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/kleinTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exact_Algorithm/test_lp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exact_Algorithm/test_lp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Breadth_First_Search_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Depth_First_Search_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Greedy_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Greedy_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Largest_First_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/dSatur_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/dSatur_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/welsh_Powell_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Heuristic_Algorithms/welsh_Powell_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Context.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/FactoryAlgorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/FactoryAlgorithms.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/TestFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/TestFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ReadFile/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReadFile/readFile.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="224">
+              <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,16 +64,92 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2070">
+              <caret line="90" column="2" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Applications/testSudoku.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/hamming6-4.clq">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main/Context.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6595#6596#0" expanded="true" />
+                <element signature="e#6696#6697#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/sudoku/sudoku1.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/sudoku/sudoku2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -61,7 +166,6 @@
       <find>w</find>
       <find>wr</find>
       <find>wro</find>
-      <find>wron</find>
       <find>33,40</find>
       <find>4039</find>
       <find>linear</find>
@@ -69,6 +173,8 @@
       <find>gre</find>
       <find>backtrack</find>
       <find>line</find>
+      <find>wron</find>
+      <find>back</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,28 +189,38 @@
         <option value="$PROJECT_DIR$/src/main/java/Input_Files/johnson8-2-4.clq" />
         <option value="$PROJECT_DIR$/src/main/java/Input_Files/hamming6-4.clq" />
         <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/testAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ReadFile/readFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main/Context.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main/JsonOutput.java" />
         <option value="$PROJECT_DIR$/src/main/java/Applications/testSudoku.java" />
         <option value="$PROJECT_DIR$/src/main/java/Input_Files/facebook_combined.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ReadFile/readFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Graph/Graph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main/TestFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main/Context.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -160,6 +276,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractGraphColoring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Applications" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph_Algorithm_Second" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Exact_Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -186,8 +318,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Input_Files" type="462c0819:PsiDirectoryNode" />
-              <item name="bechmarkSet" type="462c0819:PsiDirectoryNode" />
-              <item name="2-SecondSet" type="462c0819:PsiDirectoryNode" />
+              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
@@ -195,11 +326,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graph_Algorithm_Second" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Output_Files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,8 +339,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560193903298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560950711805" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -230,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test_lp">
+  <component name="RunManager" selected="Application.testSudoku">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="Graph_Algorithm_Implementation" />
@@ -298,11 +426,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test_lp" />
-        <item itemvalue="Application.kleinTest" />
-        <item itemvalue="Application.TestFile" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.testSudoku" />
+        <item itemvalue="Application.test_lp" />
+        <item itemvalue="Application.TestFile" />
+        <item itemvalue="Application.kleinTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -343,16 +471,29 @@
       <workItem from="1560159043686" duration="14969000" />
       <workItem from="1560534787528" duration="2804000" />
       <workItem from="1560716247222" duration="144000" />
+      <workItem from="1560760955784" duration="7523000" />
+      <workItem from="1560793224456" duration="9909000" />
+      <workItem from="1560845230550" duration="20063000" />
+      <workItem from="1560936039517" duration="9434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110041000" />
+    <option name="totallyTimeSpent" value="156970000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49926794" visible="true" weight="0.17315437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49926794" visible="true" weight="0.17315437" />
       <window_info id="Structure" order="1" sideWeight="0.50073206" side_tool="true" weight="0.18456376" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,11 +502,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20790629" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31185943" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36896047" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41288432" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27232796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.35285506" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -384,147 +525,79 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49926794" visible="true" weight="0.17315437" />
+      <window_info id="Structure" order="1" sideWeight="0.50073206" side_tool="true" weight="0.18456376" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.20790629" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15519765" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27232796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.35285506" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.27086383" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mongo Explorer" order="6" />
+      <window_info anchor="right" id="Snyk" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel7.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/6-sixth/DSJC1000.9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/6-sixth/DSJC125.1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen14_14.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/6-sixth/DSJC250.1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
+          <caret column="17" lean-forward="true" selection-start-column="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel5.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen13_13.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen12_12.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen11_11.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
+        <state relative-caret-position="230">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/huck.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/homer.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen10_10.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles1500.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles1000.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles750.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles500.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles250.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/jean.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/games120.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/david.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/anna.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="37" column="83" lean-forward="true" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main/JsonOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/5-Fifth/graph.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/5-Fifth/latin_square_10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/5-Fifth/C500.9.clq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/5-Fifth/C250.9.clq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/zeroin.i.1.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/fpsol2.i.2.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/fpsol2.i.3.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/inithx.i.1.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/inithx.i.2.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/mulsol.i.1.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen8_12.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -540,87 +613,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen15_15.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen13_13.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen12_12.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen7_7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen6_6.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/kleinTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/6-sixth/DSJC125.1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/5-Fifth/C125.9.clq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/4-FourthSet/le450_25d.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/4-FourthSet/le450_5a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/zeroin.i.3.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/fpsol2.i.1.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/3-ThirdSet/mulsol.i.3.col">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen16_16.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen5_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa15732.31371/StdStats.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen10_10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen11_11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="813">
-          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        <state relative-caret-position="-138">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1169" column="16" selection-start-line="1169" selection-start-column="16" selection-end-line="1169" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
+          <folding>
+            <element signature="e#40171#40172#0" expanded="true" />
+            <element signature="e#40220#40221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/2-SecondSet/queen16_16.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles1000.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles1500.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/myciel3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Output_Files/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/FactoryAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/anna.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/games120.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/david.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/huck.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/jean.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/miles250.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Recursive_Largest_First_Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Depth_First_Search_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#1920#1921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Breadth_First_Search_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421">
+          <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/dSatur_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/welsh_Powell_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Largest_First_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/bechmarkSet/1-FirstSet/homer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/TestFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadFile/readFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/Backtracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="29" selection-start-line="11" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -629,13 +835,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/LP_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+        <state relative-caret-position="2070">
+          <caret line="90" column="2" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AbstractGraphColoring/GraphColoring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/test_lp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/hamming6-4.clq">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exact_Algorithm/Linear_Programming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6595#6596#0" expanded="true" />
+            <element signature="e#6696#6697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Heuristic_Algorithms/Greedy_Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Applications/testSudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/sudoku/sudoku1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Input_Files/sudoku/sudoku2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

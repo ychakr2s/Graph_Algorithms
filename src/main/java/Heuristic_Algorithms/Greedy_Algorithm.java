@@ -27,6 +27,7 @@ public class Greedy_Algorithm extends GraphColoring {
     @Override
     public Algorithm executeGraphAlgorithm() {
         // Assign the first color to first vertex
+        double start = System.currentTimeMillis();
         setColor(0, 0, resultColors);
 
         // Assign colors to remaining V-1 vertices
@@ -47,7 +48,8 @@ public class Greedy_Algorithm extends GraphColoring {
             Arrays.fill(available, true);
         }
         printSolution();
-        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        double end = System.currentTimeMillis() - start;
+        return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

@@ -11,6 +11,8 @@ import java.util.Iterator;
 
 public class readFile {
 
+    public int edges;
+
     public readFile() {
     }
 
@@ -29,6 +31,7 @@ public class readFile {
                 String[] splited = line.split("\\s+");
                 if (splited[0].equals("p")) {
                     gr = new Graph(Integer.parseInt(splited[2]));
+                    gr.setEdge(Integer.parseInt(splited[3]));
                 }
 
                 if (splited[0].equals("e")) {

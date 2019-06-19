@@ -2,6 +2,7 @@ package Main;
 
 import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import ilog.concert.IloException;
 
 import java.util.ArrayList;
 
@@ -17,7 +18,7 @@ public class Context {
         this.algorithms = algorithms;
     }
 
-    public ArrayList<Algorithm> execute() {
+    public ArrayList<Algorithm> execute(){
         ArrayList<Algorithm> alg = new ArrayList<>();
         //delegates behavior to Strategy object
         for (GraphColoring algorithm : algorithms) {

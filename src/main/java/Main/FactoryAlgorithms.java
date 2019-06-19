@@ -2,8 +2,6 @@ package Main;
 
 import AbstractGraphColoring.GraphColoring;
 import Exact_Algorithm.Backtracking;
-//import Exact_Algorithm.Linear_Programming;
-import Exact_Algorithm.LP_Test;
 import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import Heuristic_Algorithms.*;

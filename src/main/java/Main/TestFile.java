@@ -1,10 +1,9 @@
 package Main;
 
-import Exact_Algorithm.LP_Test;
+//import Exact_Algorithm.LP_Test;
 import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import ReadFile.readFile;
-import com.google.gson.Gson;
 
 import java.io.*;
 import java.time.Duration;
@@ -19,8 +18,8 @@ public class TestFile {
         //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         readFile rd = new readFile();
         Graph gr = rd.readGraph(filename);
-        LP_Test lp = new LP_Test(gr);
-        lp.executeGraphAlgorithm();
+//        LP_Test lp = new LP_Test(gr);
+//        lp.executeGraphAlgorithm();
         Linear_Programming lpp = new Linear_Programming(gr);
         lpp.executeGraphAlgorithm();
         ArrayList<String> algstr = new ArrayList<>();

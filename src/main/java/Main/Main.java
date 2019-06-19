@@ -1,7 +1,7 @@
 package Main;
 
 //import Exact_Algorithm.LP_Test;
-import Exact_Algorithm.LP_Test;
+//import Exact_Algorithm.LP_Test;
 import Exact_Algorithm.Linear_Programming;
 import Graph.Graph;
 import com.google.gson.Gson;
@@ -45,8 +45,8 @@ public class Main {
         Linear_Programming lp = new Linear_Programming(g);
         lp.executeGraphAlgorithm();
 
-        LP_Test lt = new LP_Test(g);
-        lt.executeGraphAlgorithm();
+//        LP_Test lt = new LP_Test(g);
+//        lt.executeGraphAlgorithm();
 
 //        JsonOutput sl = new JsonOutput(g, ct.execute());
 //        System.out.println("++++++++++++++++++++++++ Context +++++++++++++++++++++++++++++++");

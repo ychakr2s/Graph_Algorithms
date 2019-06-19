@@ -80,6 +80,7 @@ public class dSatur_Algorithm extends GraphColoring {
      */
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
         if (!isGraphReadyColored()) {
             int count = 0;
             /*
@@ -110,8 +111,8 @@ public class dSatur_Algorithm extends GraphColoring {
         }
 
         printSolution();
-
-        return new Algorithm("DSATUR algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        double end = System.currentTimeMillis() - start;
+        return new Algorithm("DSATUR algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

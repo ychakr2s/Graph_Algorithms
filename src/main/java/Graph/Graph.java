@@ -10,6 +10,7 @@ public class Graph {
     // Adjacency List
     private int[] vertices;
     private HashSet[] edges;
+    private int edge;
 
     /*
      * Constructor
@@ -42,6 +43,14 @@ public class Graph {
 
     public HashSet<Integer> getEdges(int v) {
         return this.edges[v];
+    }
+
+    public void setEdge(int a) {
+        this.edge = a;
+    }
+
+    public int getEdge() {
+        return this.edge;
     }
 
     /*

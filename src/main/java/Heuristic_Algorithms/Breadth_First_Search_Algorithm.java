@@ -58,7 +58,6 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
             for (int n : graph.getEdges(s)) {
                 if (!visited[n]) {
                     visited[n] = true;
-
                     // assign the uncolored Vertex the suitable Color
                     assignColor(n);
                     queue.add(n);
@@ -73,6 +72,7 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
         this.visited = new boolean[V];
 
         Random rn = new Random();
@@ -85,8 +85,8 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
             }
         }
         printSolution();
-
-        return new Algorithm("Breadth First Search", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        double end = System.currentTimeMillis() - start;
+        return new Algorithm("Breadth First Search", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override

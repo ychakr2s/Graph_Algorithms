@@ -1,6 +1,7 @@
 package AbstractGraphColoring;
 
 import Graph.Graph;
+import ilog.concert.IloException;
 
 import java.util.ArrayList;
 import java.util.Collections;

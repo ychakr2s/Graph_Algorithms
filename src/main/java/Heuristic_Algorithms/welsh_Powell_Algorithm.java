@@ -58,6 +58,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
 
     @Override
     public Algorithm executeGraphAlgorithm() {
+        double start = System.currentTimeMillis();
 
         // List the vertices in order of descending valence i.e.valence degree(v(i)) >= degree(v(i+1)) .
         int[] verts = sortDesc(graph.getVertices());
@@ -89,7 +90,9 @@ public class welsh_Powell_Algorithm extends GraphColoring {
         }
 
         printSolution();
-        return new Algorithm("Welsh-Powell Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors);
+        double end = System.currentTimeMillis() - start; // 60 seconds * 1000 ms/sec
+
+        return new Algorithm("Welsh-Powell Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
     @Override
