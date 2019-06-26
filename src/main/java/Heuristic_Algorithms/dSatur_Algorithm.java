@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.ArrayList;
@@ -110,8 +110,8 @@ public class dSatur_Algorithm extends GraphColoring {
             }
         }
 
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
         return new Algorithm("DSATUR algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 

@@ -32,6 +32,7 @@ public class readFile {
                 if (splited[0].equals("p")) {
                     gr = new Graph(Integer.parseInt(splited[2]));
                     gr.setEdge(Integer.parseInt(splited[3]));
+                    gr.computeDensity();
                 }
 
                 if (splited[0].equals("e")) {

@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.Arrays;
@@ -53,8 +53,8 @@ public class Largest_First_Algorithm extends GraphColoring {
             remainingVertices = remove(remainingVertices, vertex);
         }
 
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
 
         return new Algorithm("Largest First Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }

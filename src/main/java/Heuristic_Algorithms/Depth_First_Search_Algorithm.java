@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.Arrays;
@@ -83,8 +83,8 @@ public class Depth_First_Search_Algorithm extends GraphColoring {
                 DFSUtil(i, visited);
             }
         }
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
 
         return new Algorithm("DEPTH FIRST SEARCH", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }

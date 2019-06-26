@@ -1,7 +1,7 @@
 package AbstractGraphColoring;
 
+import Create_Json.Algorithm;
 import Graph.Graph;
-import ilog.concert.IloException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -38,7 +38,7 @@ public abstract class GraphColoring {
     /*
      * This method returns the Vertex with the highest adjacency degree
      */
-    public int vertexHighstAdjDegree(int[] ver) {
+    protected int vertexHighstAdjDegree(int[] ver) {
         int max = 0;
         int vertex = 0;
         int count = 0;

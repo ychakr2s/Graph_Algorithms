@@ -1,7 +1,7 @@
 package Exact_Algorithm;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 import ilog.concert.IloIntVar;
 import ilog.concert.IloLinearNumExpr;
@@ -27,13 +27,20 @@ public class Linear_Programming extends GraphColoring {
         try {
             // Instantiate an empty model
             model = new IloCplex();
-
-            if (V > 100 || graph.getEdge() > 1000) {
-                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
-                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
-            } else {
-                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
-            }
+            /*
+             * set Parameter if the Graph has big data, than set some Constraints according to the execution time and the Gap
+             */
+//            if (V > 100 && graph.getEdge() > 1000) {
+//                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
+                model.setParam(IloCplex.Param.TimeLimit, 30 * 60);
+//            } else if(V < 100 && graph.getEdge() > 1000){
+//                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
+//                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
+//
+//            }
+//            else {
+//                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
+//            }
             // Define an array of decision variables
             IloIntVar[][] x = new IloIntVar[V][V];
 
@@ -62,7 +69,6 @@ public class Linear_Programming extends GraphColoring {
                 obj.addTerm(1, Y[i]);
             }
 
-
             // Define a minimization problem
             model.addMinimize(obj);
 
@@ -80,8 +86,8 @@ public class Linear_Programming extends GraphColoring {
             }
 
             /*
-             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of variables,
-             * one Vertex can only be colored with color j if Yj = 1.
+             * Second Constraint:  Xi,j - Yj <= 1. for all i,k= 1,..,n. The next condition combines the two types of
+             * variables, one Vertex can only be colored with color j if Yj = 1.
              */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
@@ -98,7 +104,6 @@ public class Linear_Programming extends GraphColoring {
              */
             for (int i = 0; i < V; i++) {
                 for (int j = 0; j < V; j++) {
-
                     for (int j2 = 0; j2 < V; j2++) {
                         IloLinearNumExpr constraint = model.linearNumExpr();
                         if (graph.isEdges(i, j2) && graph.isEdges(j2, i)) {
@@ -168,13 +173,12 @@ public class Linear_Programming extends GraphColoring {
             } else {
                 System.out.println("Model not solved :(");
             }
-
         } catch (Exception e) {
             e.getMessage();
         }
 
         printSolution();
-        end = (System.currentTimeMillis() - start);
+        end = (System.currentTimeMillis() - start) / 1000;
 
         return new Algorithm("Linear Programming Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }

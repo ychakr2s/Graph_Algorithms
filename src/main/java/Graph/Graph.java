@@ -1,5 +1,7 @@
 package Graph;
 
+import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -11,6 +13,7 @@ public class Graph {
     private int[] vertices;
     private HashSet[] edges;
     private int edge;
+    private double density;
 
     /*
      * Constructor
@@ -85,6 +88,17 @@ public class Graph {
      */
     public int getVertexDegree(int v) {
         return getEdges(v).size();
+    }
+
+    public void computeDensity() {
+
+        this.density = 2.0 * getEdge() / (V * (V - 1));
+        String dens = new DecimalFormat("##.###").format(density);
+        try {
+            density = DecimalFormat.getNumberInstance().parse(dens).doubleValue();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     /*

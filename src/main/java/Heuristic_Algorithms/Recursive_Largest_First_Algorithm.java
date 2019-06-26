@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.ArrayList;
@@ -122,8 +122,8 @@ public class Recursive_Largest_First_Algorithm extends GraphColoring {
 
             si++;
         }
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
         return new Algorithm("RECURSIVE LARGEST FIRST", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 

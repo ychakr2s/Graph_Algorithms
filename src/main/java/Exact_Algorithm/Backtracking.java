@@ -1,7 +1,7 @@
 package Exact_Algorithm;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.Arrays;
@@ -9,8 +9,8 @@ import java.util.Arrays;
 public class Backtracking extends GraphColoring {
     private int m;
     private int[] resultColors;
-    double start = System.currentTimeMillis();
-    double end = start + 2 * 60 * 1000; // 60 seconds * 1000 ms/sec
+    private double start = System.currentTimeMillis();
+    private double end = start + 15 * 60 * 1000; // 60 seconds * 1000 ms/sec
 
     public Backtracking(Graph g, int m) {
         super(g);
@@ -79,7 +79,7 @@ public class Backtracking extends GraphColoring {
             printSolution();
         } else
             System.out.println("the JsonOutput does not exists");
-        double ende = System.currentTimeMillis() - start;
+        double ende = (System.currentTimeMillis() - start) / 1000;
 
         return new Algorithm("Backtracking", computeResultsColors(resultColors), usedColor(resultColors), resultColors, ende);
     }

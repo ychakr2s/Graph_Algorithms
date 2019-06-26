@@ -1,13 +1,11 @@
 package Main;
 
-//import Exact_Algorithm.LP_Test;
-//import Exact_Algorithm.LP_Test;
+import Contex.Context;
 import Exact_Algorithm.Linear_Programming;
+import Factory.FactoryAlgorithms;
 import Graph.Graph;
 import com.google.gson.Gson;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -30,15 +28,10 @@ public class Main {
 
 //         i miss here Factory for Algorithms
         ArrayList<String> arl = new ArrayList<>();
+        Gson gs = new Gson();
+
         arl.add("Greedy");
         arl.add("Breadth");
-//        arl.add("Depth");
-//        arl.add("largest");
-//        arl.add("welsh-powel");
-//        arl.add("Recursive");
-//        arl.add("Linear programming");
-//        arl.add("Backtracking");
-//        arl.add("dSatur");
 
         Context ct = new Context(FactoryAlgorithms.getAlgorithms(arl, g));
         ct.execute();

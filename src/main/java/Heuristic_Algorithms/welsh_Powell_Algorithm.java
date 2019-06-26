@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class welsh_Powell_Algorithm extends GraphColoring {
     /*
      * This Method sorted the the Vertices descending according to the Vertex degree
      */
-    public int[] sortDesc(int[] a) {
+    private int[] sortDesc(int[] a) {
         int[] ret = new int[V];
         for (int i = 0; i < V; i++) {
             ret[i] = vertexHighstAdjDegree(a);
@@ -89,8 +89,8 @@ public class welsh_Powell_Algorithm extends GraphColoring {
             color++;
         }
 
-        printSolution();
-        double end = System.currentTimeMillis() - start; // 60 seconds * 1000 ms/sec
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000; // 60 seconds * 1000 ms/sec
 
         return new Algorithm("Welsh-Powell Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }

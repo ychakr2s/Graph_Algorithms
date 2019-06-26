@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.Arrays;
@@ -47,8 +47,8 @@ public class Greedy_Algorithm extends GraphColoring {
             // Reset the values back to true for the next iteration
             Arrays.fill(available, true);
         }
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
         return new Algorithm("Greedy Algorithm", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 

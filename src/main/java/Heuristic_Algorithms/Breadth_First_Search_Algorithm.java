@@ -1,7 +1,7 @@
 package Heuristic_Algorithms;
 
-import AbstractGraphColoring.Algorithm;
 import AbstractGraphColoring.GraphColoring;
+import Create_Json.Algorithm;
 import Graph.Graph;
 
 import java.util.Arrays;
@@ -84,8 +84,8 @@ public class Breadth_First_Search_Algorithm extends GraphColoring {
                 utilBFS(i);
             }
         }
-        printSolution();
-        double end = System.currentTimeMillis() - start;
+//        printSolution();
+        double end = (System.currentTimeMillis() - start) / 1000;
         return new Algorithm("Breadth First Search", computeResultsColors(resultColors), usedColor(resultColors), resultColors, end);
     }
 
