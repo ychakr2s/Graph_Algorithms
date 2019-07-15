@@ -82,7 +82,6 @@ public abstract class GraphColoring {
                 available[getColor(i, resultColors)] = false;
             }
         }
-
         // Find the first available color
         int cr;
         for (cr = 0; cr < graph.getNumVertices(); cr++) {

@@ -1,4 +1,4 @@
-package  Create_Json;;
+package Create_Json;
 
 import Graph.Graph;
 
@@ -12,11 +12,4 @@ public class JsonOutput {
         this.Graph = gr;
         this.algorithms = algorithms;
     }
-
-//    public JsonOutput(Graph gr, ArrayList<Algorithm> execute) {
-//
-//    }
-
-//    public JsonOutput(Graph.Graph gr, ArrayList<Algorithm> execute) {
-//    }
 }

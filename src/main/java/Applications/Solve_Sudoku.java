@@ -1,7 +1,5 @@
 package Applications;
 
-import java.util.Iterator;
-
 public class Solve_Sudoku extends SudokuGraph {
 
     private int V;
@@ -88,7 +86,6 @@ public class Solve_Sudoku extends SudokuGraph {
             System.out.println("the JsonOutput does not exists");
             return "There is an Input Error";
         }
-
     }
 
     public String toString() {
@@ -104,5 +101,4 @@ public class Solve_Sudoku extends SudokuGraph {
         }
         return string.toString();
     }
-
 }

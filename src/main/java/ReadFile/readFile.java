@@ -19,7 +19,7 @@ public class readFile {
     /*
      * This method read a File and produce a Graph.
      */
-    public Graph readGraph(String filename) {
+    public Graph dimacsToGraph(String filename) {
 
         Path path = Paths.get(filename);
         Graph gr = null;
@@ -38,6 +38,37 @@ public class readFile {
                 if (splited[0].equals("e")) {
                     assert gr != null;
                     gr.addEdge(Integer.parseInt(splited[1]) - 1, Integer.parseInt(splited[2]) - 1);
+                }
+
+                line = reader.readLine();
+            }
+            reader.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return gr;
+    }
+
+    public Graph self_generated(String filename) {
+
+        Path path = Paths.get(filename);
+        Graph gr = null;
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(String.valueOf(path)));
+            String line = reader.readLine();
+            while (line != null) {
+                String[] splited = line.split("\\s+");
+                if (splited[0].equals("p")) {
+                    gr = new Graph(Integer.parseInt(splited[1]));
+                    gr.setEdge(Integer.parseInt(splited[2]));
+                    gr.computeDensity();
+                } else if (splited[0].equals("")) {
+                    break;
+                } else {
+                    assert gr != null;
+                    gr.addEdge(Integer.parseInt(splited[0]), Integer.parseInt(splited[1]));
                 }
 
                 line = reader.readLine();
@@ -105,7 +136,6 @@ public class readFile {
                         sd.setFixedColor(vertex);
                     }
                     vertex++;
-
                 }
                 line = reader.readLine();
             }

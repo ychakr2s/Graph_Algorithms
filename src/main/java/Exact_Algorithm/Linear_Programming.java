@@ -32,7 +32,7 @@ public class Linear_Programming extends GraphColoring {
              */
 //            if (V > 100 && graph.getEdge() > 1000) {
 //                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
-                model.setParam(IloCplex.Param.TimeLimit, 30 * 60);
+                model.setParam(IloCplex.Param.TimeLimit, 240 * 60);
 //            } else if(V < 100 && graph.getEdge() > 1000){
 //                model.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.16);
 //                model.setParam(IloCplex.Param.TimeLimit, 15 * 60);
